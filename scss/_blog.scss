@@ -1,0 +1,101 @@
+.blogPost-details {
+  @include displayFlex(flex-start, center, column);
+  gap: 1rem;
+  .postImg {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  .tag {
+    @include displayFlex(center, unset, row);
+    gap: 0.5rem;
+    @include textTitle($primary-blue, left);
+    font-size: $fontSize-body5;
+    a {
+      color: $primary-blue;
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+      }
+    }
+  }
+  p {
+    @include text($secondary-gray, left, $fontSize-body5);
+    line-height: 1.5;
+  }
+  .subtitle {
+    @include textTitle($primary-blue, left);
+    font-size: $fontSize-body3;
+  }
+  .list {
+    @include displayFlex(flex-start, unset, column);
+    gap: 1rem;
+    li {
+      @include displayFlex(center, unset, row);
+      gap: 1rem;
+      i {
+        font-size: $fontSize-body6;
+      }
+      span {
+        display: block;
+        @include text($primary-blue, left, $fontSize-body5);
+      }
+    }
+  }
+  .quote {
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 4rem;
+    padding-top: 2rem;
+    background: $primary-blue;
+    position: relative;
+    .quoteIcon {
+      position: absolute;
+      top: 0;
+      left: 2rem;
+    }
+  }
+  ol {
+    counter-reset: num;
+    li {
+      counter-increment: num;
+      @include text($primary-blue, left, $fontSize-body5);
+      &::before {
+        content: counter(num) ". ";
+        color: $primary-blue;
+      }
+    }
+  }
+}
+
+/** 
+*?===============================  MEDIA QUERIES ===============================================================**/
+@media (min-width: 768px) {
+  .blogPost-details {
+    .postImg {
+      height: 28rem;
+    }
+    .quote {
+      p {
+        font-size: $fontSize-body3;
+      }
+    }
+  }
+  // ======================================
+}
+
+@media (min-width: 1040px) {
+  .blogPost-details {
+    .postImg {
+      height: 32rem;
+    }
+  }
+  // ======================================
+}
+
+/** 
+*?=============x=================  MEDIA QUERIES ==================x============================================**/

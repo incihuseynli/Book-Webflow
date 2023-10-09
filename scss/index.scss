@@ -1,0 +1,1378 @@
+@import "reset", "variables", "404", "about", "stores", "blog", "contact";
+
+/** 
+**==================================  Webkits ================================================================**/
+
+/** 
+*!================================  Starts Here ================================================================**/
+// Scrollbar
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $primary-blue;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: $primary-yellow;
+}
+::-moz-scrollbar {
+  width: 12px;
+}
+
+::-moz-scrollbar-track {
+  background: $primary-blue;
+}
+::-moz-scrollbar-thumb {
+  border-radius: 10px;
+  background: $primary-yellow;
+}
+
+
+.cartSection {
+  .lists::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}
+* .cart {
+  position: relative;
+  .number {
+    position: absolute;
+    top: -0.8rem;
+    right: -1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $primary-yellow;
+    border-radius: 50%;
+    padding: 0.2rem;
+    @include text($primary-blue, center, $fontSize-body5);
+    font-weight: 600;
+  }
+}
+.socials {
+  i {
+    width: 2rem;
+    height: 2rem;
+    background: $white;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: $fontSize-body4;
+    color: $primary-blue;
+    transition: 0.6s;
+    &:hover {
+      background: $primary-yellow;
+    }
+  }
+}
+.logo {
+  @include displayFlex(center, center, row);
+  gap: 1rem;
+  h1 {
+    font-size: $fontSize-body1;
+    color: $white;
+  }
+}
+.line {
+  @include line();
+}
+.title {
+  @include secTitle($primary-blue, center);
+}
+.fa-circle {
+  margin-top: 0.2rem;
+  color: $primary-yellow;
+  font-size: $fontSize-body4;
+}
+.fa-circle-half-stroke {
+  color: $primary-yellow;
+  font-size: $fontSize-body4;
+}
+/* ==== Header Section ==== */
+header {
+  padding: $sm;
+  background: $primary-blue;
+  .btn {
+    @include btn(10rem, $primary-yellow, $white, $primary-blue, $white);
+  }
+  .lg-header {
+    display: none;
+  }
+
+  .sm-header {
+    position: relative;
+    @include displayFlex(center, space-between, row);
+    z-index: 10000;
+    #openMenu {
+      font-size: $fontSize-body2;
+      color: $white;
+    }
+
+    .navbar {
+      position: fixed;
+      width: 90%;
+      height: 100%;
+      inset: 0;
+      background: $white;
+      padding: $md;
+      transform: translateX(-200%);
+      transition: 0.8s;
+      .row {
+        @include displayFlex(center, space-between, row);
+        a {
+          h1 {
+            color: $primary-blue;
+          }
+        }
+        #closeMenu {
+          font-size: $fontSize-body3;
+          color: $primary-blue;
+          transition: 0.6s;
+          &:hover {
+            color: $primary-yellow;
+          }
+        }
+      }
+      .navmenu {
+        margin: $lg 0 $md;
+        @include displayFlex(flex-start, center, column);
+        gap: 1.2rem;
+        li {
+          @include textTitle($primary-blue, left);
+          a {
+            color: $primary-blue;
+            transition: 0.4s;
+          }
+
+          &:hover {
+            a {
+              color: $primary-yellow;
+              text-decoration: underline;
+              text-underline-offset: 0.3rem;
+            }
+          }
+        }
+      }
+
+      .socials {
+        margin: $md 0;
+        @include displayFlex(center, unset, row);
+        gap: 1.5rem;
+      }
+    }
+  }
+}
+/* =x== Header Section =x== */
+/* ==== Main Section ==== */
+main {
+  section {
+    padding: $lg $sm;
+  }
+  // Hero Section
+  .hero {
+    background: $primary-blue;
+    @include displayGrid(repeat(1, 1fr), unset, 0);
+    align-items: center;
+    justify-content: center;
+    .image {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .info {
+      width: 100%;
+      @include displayFlex(center, center, column);
+      gap: 1.5rem;
+      .tag {
+        @include displayFlex(center, unset, row);
+        gap: 0.5rem;
+        .line {
+          @include line();
+        }
+        h5 {
+          @include tagTitle($white, center, $fontSize-body3);
+        }
+      }
+      .heading {
+        @include heading($white, center);
+        font-size: $fontSize-title2;
+      }
+      p {
+        @include text($secondary-gray, center, $fontSize-body4);
+      }
+      .buttons {
+        width: 100%;
+        @include displayFlex(center, center, column);
+        // gap: 2rem;
+        .btn {
+          @include btn(16rem, $primary-yellow, $white, $primary-blue, $white);
+        }
+        .btn-text {
+          @include btnText(16rem, $white);
+        }
+      }
+      .details {
+        margin-inline: auto;
+        @include displayFlex(center, center, column);
+        li {
+          width: 100%;
+          height: 4rem;
+          @include displayFlex(center, center, row);
+          gap: 1rem;
+          h4 {
+            @include textTitle($white, left);
+            @include displayFlex(center, none, row);
+            gap: 1rem;
+            p {
+              @include text($secondary-gray, left, $fontSize-body5);
+            }
+          }
+        }
+      }
+    }
+  }
+  // Books Section
+  .books-container {
+    .line {
+      margin-inline: auto;
+    }
+    .books {
+      margin-top: $md;
+      @include displayGrid(repeat(1, 1fr), none, 2rem);
+      .book {
+        @include displayFlex(center, center, column);
+        gap: 1rem;
+        .image {
+          position: relative;
+          width: 20rem;
+          height: 16rem;
+          padding: 2rem 0;
+          background: rgba($secondary-gray, 0.1);
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .info {
+          @include displayFlex(center, center, column);
+          gap: 1rem;
+          .subtitle {
+            @include textTitle($primary-blue, center);
+            font-weight: 700;
+          }
+          p {
+            @include text($secondary-gray, center, $fontSize-body5);
+            line-height: 1.5;
+          }
+          .details {
+            width: 100%;
+            @include displayFlex(center, space-between, row);
+            li {
+              @include displayFlex(flex-start, none, row);
+              gap: 0.5rem;
+              i {
+                margin-top: 0.2rem;
+              }
+              h4 {
+                @include text($primary-blue, left, $fontSize-body3);
+                font-weight: 700;
+              }
+            }
+          }
+          .btn-outline {
+            @include btnOutline(
+              100%,
+              $primary-blue,
+              $primary-yellow,
+              $primary-yellow,
+              $white
+            );
+          }
+        }
+      }
+    }
+  }
+  // About Author Section
+  .about {
+    background: rgba($secondary-gray, 0.1);
+    .image {
+      position: relative;
+      margin-bottom: 1rem;
+      .img {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .decoration {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: 4px solid $primary-yellow;
+      }
+    }
+    .info {
+      width: 100%;
+      @include displayFlex(center, unset, column);
+      gap: 1rem;
+      .subtitle {
+        @include textTitle($primary-blue, center);
+        font-weight: 700;
+      }
+      p {
+        width: 100%;
+        @include text($secondary-gray, center, $fontSize-body5);
+        line-height: 1.5;
+      }
+      .ratings {
+        @include displayFlex(center, center, row);
+        gap: 1rem;
+        .rating:not(:last-child) {
+          border-right: 1px solid $primary-yellow;
+          padding-right: 0.5rem;
+        }
+        .rating {
+          h4 {
+            @include textTitle($primary-blue, left);
+            font-weight: 700;
+          }
+          p {
+            font-size: $fontSize-body6;
+            text-align: center;
+          }
+        }
+      }
+      .qrCode {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        background: $primary-blue;
+        @include displayFlex(center, center, column);
+        gap: 1rem;
+        img {
+          width: 8rem;
+          height: 8rem;
+          object-fit: contain;
+        }
+        h5 {
+          @include textTitle($primary-yellow, center);
+          font-size: $fontSize-body4;
+        }
+      }
+    }
+  }
+  // Stores Section
+  .stores {
+    .storesContainer {
+      @include displayGrid(repeat(1, 1fr), unset, 2rem);
+      justify-content: center;
+      place-items: center;
+      margin: 4rem 0 0;
+      .store {
+        width: 16rem;
+        @include displayFlex(center, center, column);
+        text-align: center;
+        img {
+          width: 6rem;
+          height: 6rem;
+          object-fit: contain;
+        }
+        .subtitle {
+          @include textTitle($primary-blue, center);
+          margin: 1.5rem 0 0.5rem;
+        }
+      }
+    }
+  }
+
+  // Banner Section
+  .banner {
+    background: $primary-blue;
+    @include displayFlex(center, center, column);
+    text-align: center;
+    .image {
+      display: none;
+    }
+    .text {
+      .bannerTitle {
+        @include textTitle($white, center);
+      }
+      .line {
+        margin: 0.5rem auto;
+      }
+      p {
+        @include text($secondary-gray, center, $fontSize-body4);
+      }
+      .btn-outline {
+        @include btnOutline(14rem, $white, $white, $white, $primary-blue);
+        margin-top: 1.5rem;
+      }
+    }
+  }
+  // Reasons Section
+  .reasons {
+    .line {
+      margin-inline: auto;
+    }
+    .row {
+      margin-top: 2rem;
+      .cards {
+        @include displayGrid(repeat(1, 1fr), repeat(1, 1fr), 2rem);
+        .card {
+          width: 100%;
+          padding: 2rem 1.5rem;
+          background: rgba($secondary-gray, 0.1);
+          @include displayFlex(flex-start, unset, column);
+          gap: 1.5rem;
+          .number {
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            @include text($primary-blue, center, $fontSize-body3);
+            background: $primary-yellow;
+            border-radius: 50%;
+            padding: 0.8rem 0;
+            font-weight: 500;
+          }
+          p {
+            @include text($primary-blue, left, $fontSize-body3);
+            font-weight: 500;
+            line-height: 1.5;
+          }
+        }
+      }
+      .image {
+        display: none;
+      }
+    }
+  }
+  // Chapters Section
+  .chapters {
+    background: rgba($secondary-gray, 0.1);
+    @include displayFlex(center, center, column);
+    gap: 2rem;
+    .line {
+      margin-top: -1rem;
+    }
+    .cards {
+      @include displayGrid(repeat(1, 1fr), unset, 1.5rem);
+      .card {
+        width: 100%;
+        height: 11rem;
+        background: $white;
+        @include displayFlex(flex-start, unset, column);
+        gap: 1rem;
+        padding: 1rem;
+        .subtitle {
+          @include textTitle($primary-blue, left);
+          font-size: $fontSize-body3;
+        }
+        p {
+          @include text($secondary-gray, left, $fontSize-body5);
+        }
+        .row {
+          width: 100%;
+          @include displayFlex(center, space-between, row);
+          gap: 5rem;
+          li {
+            @include displayFlex(flex-start, center, row);
+            gap: 0.5rem;
+            h4 {
+              @include displayFlex(flex-start, unset, row);
+              flex-wrap: wrap;
+              @include text($primary-blue, left, $fontSize-body4);
+              font-weight: 700;
+              span {
+                display: block;
+                @include text($secondary-gray, left, $fontSize-body5);
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      @include btn(
+        100%,
+        $primary-yellow,
+        $primary-blue,
+        $primary-blue,
+        $primary-blue
+      );
+      &:hover {
+        color: $white;
+      }
+    }
+    .bottom-text {
+      @include text($secondary-gray, center, $fontSize-body4);
+      line-height: 1.5;
+      a {
+        color: $primary-blue;
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+        font-weight: 500;
+      }
+    }
+  }
+  // Reviews Section
+  .reviews {
+    @include displayGrid(repeat(1, 1fr), unset, 2rem);
+    .info {
+      @include displayFlex(center, center, column);
+      gap: 1rem;
+      .head {
+        .line {
+          margin-inline: auto;
+        }
+      }
+      p {
+        @include text($secondary-gray, center, $fontSize-body5);
+        line-height: 1.5;
+      }
+      .overallRate {
+        @include displayFlex(center, unset, row);
+        gap: 1rem;
+      }
+      h6 {
+        @include text($primary-blue, center, $fontSize-body4);
+        font-weight: 500;
+      }
+    }
+    .cards {
+      @include displayFlex(center, center, row);
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      .card {
+        width: 100%;
+        background: $primary-blue;
+        padding: 2rem 1.5rem;
+        @include displayFlex(center, unset, column);
+        gap: 2rem;
+        .card-head {
+          @include displayFlex(center, unset, row);
+          gap: 1.25rem;
+          .image {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .col {
+            h4 {
+              @include textTitle($white, left);
+            }
+            .ratings {
+              i {
+                font-size: $fontSize-body5;
+              }
+            }
+          }
+        }
+        .card-body {
+          @include displayFlex(center, center, column);
+          gap: 1rem;
+          .spotlightedText {
+            @include text($white, left, $fontSize-body3);
+            text-shadow: rgba(253, 253, 253, 0.87) 0px 0px 10px;
+          }
+          p {
+            @include text($secondary-gray, center, $fontSize-body5);
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  // Blog Section
+  .blogContainer {
+    background: rgba($secondary-gray, 0.1);
+    @include displayFlex(center, center, column);
+    gap: 3rem;
+    .line {
+      margin-inline: auto;
+    }
+    .cards {
+      @include displayGrid(repeat(1, 1fr), unset, 1.5rem);
+      .card {
+        width: 100%;
+        background: $brightWhite;
+        @include displayFlex(center, center, column);
+        gap: 2rem;
+        .card-head {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .card-body {
+          padding: 0 1rem 1rem;
+          @include displayFlex(center, center, column);
+          gap: 1.5rem;
+          .subtitle {
+            @include textTitle($primary-blue, center);
+            margin-inline: -1rem;
+          }
+          p {
+            @include text($secondary-gray, center, $fontSize-body5);
+            line-height: 1.5;
+          }
+          .row {
+            @include displayFlex(center, space-between, row);
+            width: 100%;
+            a {
+              @include text($primary-blue, left, $fontSize-body5);
+              text-decoration: underline;
+              text-underline-offset: 0.3rem;
+              font-weight: 700;
+            }
+            .date {
+              @include displayFlex(center, unset, row);
+              gap: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Subscription Section
+  .subscription {
+    .container {
+      width: 100%;
+      margin-inline: auto;
+      background: $primary-yellow;
+      padding: 2rem;
+      @include displayFlex(unset, center, column);
+      gap: 1rem;
+      .head {
+        .title {
+          font-size: $fontSize-body1;
+        }
+        .line {
+          background: $primary-blue;
+          margin-inline: auto;
+        }
+      }
+      p {
+        @include text($primary-blue, center, $fontSize-body5);
+      }
+      .inputBx {
+        @include displayFlex(center, center, column);
+        gap: 1rem;
+        input {
+          @include input(100%, $fontSize-body6, $primary-blue, $primary-blue);
+        }
+        .btn {
+          @include btn(100%, $primary-blue, $white, $white, $primary-yellow);
+          &:hover {
+            a {
+              color: $primary-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ============= Single Page Header ============= */
+  .page-header {
+    background: $primary-blue;
+    @include displayFlex(center, center, column);
+    gap: 1.5rem;
+    .head {
+      .title {
+        color: $white;
+        margin-bottom: 0.5rem;
+      }
+      .line {
+        margin-inline: auto;
+      }
+    }
+    p {
+      // width: 30rem;
+      @include text($secondary-gray, center, $fontSize-body4);
+    }
+  }
+  /* ======x====== Single Page Header =====x======= */
+  // ========================
+}
+/* =x== Main Section =x== */
+/* ==== Footer Section ==== */
+footer {
+  background: $primary-blue;
+  padding: $md $sm $sm;
+  @include displayFlex(unset, unset, column);
+  gap: 2rem;
+  .row {
+    @include displayGrid(repeat(1, 1fr), repeat(1, 1fr), 2rem);
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $secondary-gray;
+    padding-bottom: 5rem;
+    .col {
+      @include displayFlex(center, unset, column);
+      gap: 1.5rem;
+      .footer-title {
+        @include textTitle($white, center);
+      }
+      .footer-menu {
+        @include displayFlex(flex-start, unset, column);
+        gap: 1rem;
+        li {
+          @include displayFlex(center, unset, row);
+          gap: 0.8rem;
+          a {
+            @include text($secondary-gray, center, $fontSize-body3);
+          }
+          &:hover {
+            a {
+              color: $white;
+            }
+          }
+          h6 {
+            width: 6rem;
+            @include text($white, center, $fontSize-body4);
+          }
+          span {
+            @include text($secondary-gray, center, $fontSize-body5);
+          }
+        }
+      }
+    }
+  }
+  p {
+    @include text($white, center, $fontSize-body5);
+  }
+}
+/* =x== Footer Section =x== */
+/** 
+*!==============x=================  Ends Here ================x===============================================**/
+
+/** 
+*?================================  MEDIA QUERIES ================================================================**/
+
+// for medium screens (tablets, small laptops etc..)
+@media (min-width: 768px) {
+  /* ==== Header Section ==== */
+  header {
+    padding: $md;
+    .sm-header,
+    .socials {
+      display: none;
+    }
+    .lg-header {
+      @include displayFlex(center, space-between, row);
+      .row {
+        @include displayFlex(center, unset, row);
+        gap: 1.5rem;
+      }
+      .navmenu {
+        @include displayFlex(center, unset, row);
+        gap: 1.5rem;
+        li {
+          @include text($white, center, $fontSize-body3);
+          transition: 0.6s;
+
+          a {
+            color: $white;
+            transition: 0.6s;
+          }
+          &:hover {
+            a {
+              color: $primary-yellow;
+              text-decoration: underline;
+              text-underline-offset: 0.3rem;
+            }
+          }
+        }
+      }
+      .cart {
+        margin-right: 2rem;
+      }
+      .btn {
+        &:hover {
+          border: 2px solid $primary-yellow;
+        }
+      }
+    }
+  }
+  /* =x== Header Section =x== */
+  /* ==== Main Section ==== */
+  main {
+    section {
+      padding: $lg $md;
+    }
+    // Hero Section
+    .hero {
+      @include displayGrid(repeat(1, 1fr), unset, 2rem);
+      align-items: center;
+      justify-content: center;
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+      .info {
+        width: 100%;
+        margin-top: 2rem;
+        @include displayFlex(flex-start, none, column);
+        gap: 2rem;
+        .tag {
+          @include displayFlex(center, unset, row);
+          h5 {
+            @include tagTitle($white, left, $fontSize-body2);
+          }
+        }
+        .heading {
+          @include heading($white, left);
+        }
+        p {
+          @include text($secondary-gray, left, $fontSize-body3);
+        }
+        .buttons {
+          width: auto;
+          margin-inline: auto;
+          @include displayFlex(center, center, row);
+          gap: 4rem;
+          .btn {
+            @include btn(12rem, $primary-yellow, $white, $primary-blue, $white);
+          }
+          .btn-text {
+            @include btnText(12rem, $white);
+          }
+        }
+        .details {
+          @include displayFlex(center, space-between, row);
+          margin-inline: auto;
+          gap: 4rem;
+          li {
+            width: auto;
+            @include displayFlex(flex-start, none, row);
+            h4 {
+              @include textTitle($white, left);
+              @include displayFlex(flex-start, none, column);
+              gap: 0;
+              p {
+                @include text($secondary-gray, left, $fontSize-body5);
+              }
+            }
+          }
+        }
+      }
+    }
+    // Books Section
+    .books-container {
+      .books {
+        .book {
+          flex-direction: row;
+          .image {
+            width: 14rem;
+            height: 18rem;
+          }
+          .info {
+            width: 18rem;
+            align-items: flex-start;
+            .subtitle,
+            p {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    // About Author Section
+    .about {
+      width: 100%;
+      @include displayGrid(18rem 30rem, none, 1rem);
+      align-items: center;
+      justify-content: space-between;
+      place-items: center;
+      .info {
+        .subtitle {
+          text-align: left;
+        }
+        .detailText {
+          width: 90%;
+          text-align: left;
+        }
+        .ratings {
+          .rating:not(:last-child) {
+            padding-right: 2rem;
+          }
+          .rating {
+            h4 {
+              text-align: left;
+            }
+            p {
+              width: 100%;
+            }
+          }
+        }
+        .qrCode {
+          width: 24rem;
+          height: 8rem;
+          flex-direction: row;
+          img {
+            width: 6rem;
+            height: 6rem;
+          }
+          .text {
+            h5,
+            p {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    // Stores Section
+    .stores {
+      .storesContainer {
+        @include displayGrid(repeat(2, 1fr), unset, 2rem);
+      }
+    }
+    // Banner Section
+    .banner {
+      @include displayGrid(repeat(2, 1fr), unset, 2rem);
+      align-items: center;
+      text-align: left;
+      .image {
+        display: block;
+        width: 26rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .text {
+        .bannerTitle {
+          text-align: left;
+        }
+        .line {
+          margin-inline: 0;
+        }
+        p {
+          text-align: left;
+        }
+      }
+    }
+    // Reasons Section
+    .reasons {
+      .row {
+        .cards {
+          @include displayGrid(repeat(2, 1fr), repeat(2, 1fr), 2rem);
+        }
+      }
+    }
+    // Chapters Section
+    .chapters {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        .card {
+          .row {
+            li {
+              h4 {
+                align-items: baseline;
+                gap: 0.5rem;
+              }
+              i {
+                margin-top: 0.2rem;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        width: 22rem;
+      }
+      .bottom-text {
+        width: 18rem;
+      }
+    }
+    // Reviews Section
+    .reviews {
+      .cards {
+        .card {
+          width: 22rem;
+        }
+      }
+    }
+    // Blog Section
+    .blogContainer {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        .card {
+          width: 22rem;
+        }
+      }
+    }
+    // Subscription Section
+    .subscription {
+      .container {
+        padding: 3rem 5rem;
+        .inputBx {
+          flex-direction: row;
+          input {
+            width: 100%;
+          }
+          .btn {
+            width: 50%;
+          }
+        }
+      }
+    }
+    /* ============= Single Page Header ============= */
+    .page-header {
+      p {
+        width: 30rem;
+      }
+    }
+    /* ======x====== Single Page Header =====x======= */
+    // =============================
+  }
+  /* =x== Main Section =x== */
+  /* ==== Footer Section ==== */
+  footer {
+    padding: $md $md $sm;
+    @include displayFlex(unset, unset, column);
+    .row {
+      @include displayGrid(repeat(2, 1fr), repeat(2, 1fr), 4rem);
+      align-items: flex-start;
+      justify-content: space-between;
+      .col {
+        @include displayFlex(flex-start, unset, column);
+        .footer-title {
+          @include textTitle($white, left);
+        }
+        .footer-menu {
+          @include displayFlex(flex-start, unset, column);
+          li {
+            @include displayFlex(center, unset, row);
+            a {
+              @include text($secondary-gray, left, $fontSize-body3);
+            }
+
+            h6 {
+              @include text($white, left, $fontSize-body4);
+            }
+            span {
+              @include text($secondary-gray, left, $fontSize-body5);
+            }
+          }
+        }
+      }
+    }
+  }
+  /* =x== Footer Section =x== */
+  //======================================================================================
+}
+
+// for large screens (laptops, large tablets, desktops etc..)
+@media (min-width: 1040px) {
+  /* ==== Header Section ==== */
+  header {
+    padding: $md $lg;
+    .sm-header {
+      display: none;
+    }
+    .socials {
+      @include displayFlex(center, unset, row);
+      gap: 1rem;
+    }
+  }
+  /* =x== Header Section =x== */
+  /* ==== Main Section ==== */
+  main {
+    section {
+      padding: $lg;
+    }
+    // Hero Section
+    .hero {
+      padding: $md $lg;
+      width: 100%;
+      height: 100%;
+      @include displayGrid(38rem 30rem, unset, 0);
+      align-items: flex-start;
+      justify-content: space-between;
+      .image {
+        width: 30rem;
+        height: 36rem;
+      }
+      .info {
+        width: 38rem;
+        margin-top: 4rem;
+        @include displayFlex(flex-start, none, column);
+        gap: 1.5rem;
+        .buttons {
+          width: auto;
+          @include displayFlex(center, none, row);
+          margin-inline: 0;
+        }
+        .details {
+          margin-inline: 0;
+        }
+      }
+    }
+    // Books Section
+    .books-container {
+      .books {
+        @include displayGrid(repeat(2, 1fr), none, 0);
+        place-items: center;
+      }
+    }
+    // About Author Section
+    .about {
+      @include displayGrid(20rem 30rem, none, 4rem);
+      justify-content: center;
+      align-items: flex-start;
+      .image {
+        z-index: 1;
+        .img {
+          width: 20rem;
+          height: 24rem;
+          z-index: 3;
+          box-shadow: $boxShadow1;
+        }
+        .decoration {
+          width: 20rem;
+          height: 24rem;
+          top: 1rem;
+          left: 1rem;
+          z-index: -1;
+        }
+      }
+      .info {
+        width: 30rem;
+        align-items: flex-start;
+        .qrCode {
+          width: 90%;
+          height: 10rem;
+          img {
+            width: 8rem;
+            height: 8rem;
+          }
+        }
+      }
+    }
+    // Stores Section
+    .stores {
+      .storesContainer {
+        @include displayGrid(repeat(4, 1fr), unset, 2rem);
+      }
+    }
+    // Banner Section
+    .banner {
+      .image {
+        width: 28rem;
+        height: 24rem;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+    // Reasons Section
+    .reasons {
+      .row {
+        @include displayGrid(34rem 22rem, unset, 2rem);
+        .cards {
+          width: 34rem;
+          @include displayGrid(16rem 16rem, unset, 2rem);
+          .card {
+            width: 16rem;
+          }
+        }
+        .image {
+          display: block;
+          position: relative;
+          z-index: 1;
+          img {
+            width: 22rem;
+            height: 100%;
+            object-fit: contain;
+            z-index: 2;
+            height: 100%;
+          }
+          .decoration {
+            width: 22rem;
+            height: 100%;
+            border: 4px solid $primary-yellow;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: -1;
+          }
+        }
+      }
+    }
+    // Chapters Section
+    .chapters {
+      .cards {
+        .card {
+          height: 10rem;
+        }
+      }
+    }
+    // Reviews Section
+    .reviews {
+      @include displayGrid(26rem 1fr, unset, 2rem);
+      align-items: flex-start;
+      .info {
+        width: 26rem;
+      }
+      .cards {
+        align-items: flex-start;
+        .card {
+          width: 20rem;
+        }
+      }
+    }
+    // Blog Section
+    .blogContainer {
+      .cards {
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        .card {
+          width: 16rem;
+          .card-body {
+            align-items: flex-start;
+            gap: 0.5rem;
+            .subtitle {
+              font-size: $fontSize-body4;
+              text-align: left;
+              padding-inline: 1rem;
+            }
+            p {
+              text-align: left;
+              margin-bottom: 1rem;
+            }
+            .row {
+              .dateOfPost {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    // Subscription Section
+    .subscription {
+      .container {
+        width: 50rem;
+        padding: 5rem;
+        gap: 2rem;
+        p {
+          width: 30rem;
+          margin-inline: auto;
+        }
+      }
+    }
+    // ===========================
+  }
+  /* =x== Main Section =x== */
+  /* ==== Footer Section ==== */
+  footer {
+    padding: $lg $lg $sm;
+    .row {
+      @include displayGrid(20rem 20rem 20rem, unset, 0);
+      justify-content: space-between;
+      .col {
+        width: 20rem;
+      }
+    }
+  }
+  /* =x== Footer Section =x== */
+
+  //======================================================================================
+}
+@media (min-width: 1100px) {
+  // Reasons Section
+  .reasons {
+    .row {
+      @include displayGrid(repeat(2, 1fr), unset, 2rem);
+      place-content: center;
+      .cards {
+        width: 100%;
+        @include displayGrid(24rem 24rem, unset, 2rem);
+        .card {
+          width: 24rem;
+        }
+      }
+      .image {
+        display: block;
+        position: relative;
+        z-index: 1;
+        right: 1.5rem;
+        margin-left: 4rem;
+        img {
+          width: 22rem;
+          height: 100%;
+          object-fit: contain;
+          z-index: 2;
+        }
+        .decoration {
+          width: 22rem;
+          height: 100%;
+          border: 4px solid $primary-yellow;
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1295px) {
+  // Books Section
+  .books-container {
+    .books {
+      @include displayGrid(repeat(2, 1fr), none, 0);
+      place-items: center;
+    }
+  }
+  // Reviews Section
+  .reviews {
+    align-items: center !important;
+    gap: 3rem !important;
+    .info {
+      align-items: flex-start !important;
+      .title,
+      p,
+      h6 {
+        text-align: left !important;
+      }
+      .line {
+        margin-inline: 0 !important;
+      }
+    }
+    .cards {
+      position: relative;
+      justify-content: unset;
+      align-items: flex-start;
+      flex-direction: column !important;
+      .card:last-child {
+        position: absolute;
+        right: 4rem;
+      }
+    }
+  }
+  // =============================================
+}
+/** 
+*?==============x=================  MEDIA QUERIES ================x===============================================**/

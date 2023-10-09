@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <title>Book Webflow</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- =========================== HEADER SECTION =========================== -->
+    <header>
+      <!-- Header for large screens -->
+      <div class="lg-header">
+        <div class="row">
+          <a class="logo" href="index.html">
+            <img src="./assets/icons/logo.svg" alt="Logo" />
+            <h1>Pages</h1>
+          </a>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a href="cart.html" class="cart">
+            <div class="number" id="cartAmount">0</div>
+            <img src="./assets/icons/shopping_cart.svg" />
+          </a>
+          <button class="btn"><a href="store.html">Order today</a></button>
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="sm-header">
+        <a class="logo" href="index.html">
+          <img src="./assets/icons/logo.svg" alt="Logo" />
+          <h1>Pages</h1>
+        </a>
+        <!-- Mobile Menu -->
+        <i class="fa-solid fa-bars" id="openMenu" onclick="openMenu()"></i>
+        <div class="navbar">
+          <div class="row">
+            <a class="logo" href="index.html">
+              <img src="./assets/icons/logo.svg" alt="Logo" />
+              <h1>Pages</h1>
+            </a>
+            <i
+              class="fa-solid fa-xmark"
+              id="closeMenu"
+              onclick="closeMenu()"
+            ></i>
+          </div>
+          <ul class="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button class="btn"><a href="store.html">Order today</a></button>
+          <div class="socials">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =============x============= HEADER SECTION =============x============= -->
+    <!-- =========================== MAIN SECTION =========================== -->
+    <main>
+      <!-- --- Page Header --- -->
+      <section class="page-header">
+        <div class="head">
+          <h1 class="title">Your Cart</h1>
+          <div class="line"></div>
+        </div>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, have
+          suffered alteration in some form.
+        </p>
+      </section>
+      <!-- -x- Page Header -x- -->
+      <!-- --- Cart --- -->
+      <section class="cartSection">
+        <div class="lists">
+          <div class="item">
+            <img src="./assets/images/books/Book1.png" alt="" />
+            <div class="col">
+              <div class="row">
+                <div class="info">
+                  <h6 class="name">Atomic One’s</h6>
+                  <p>$30.00 USD</p>
+                </div>
+                <div class="details">
+                  <div class="amounts">
+                    <i class="fa-solid fa-minus"></i>
+                    <div class="quantity">0</div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+              
+              <div class="price">
+                <h6>Subtotal price: </h6>
+                <span class="subPrice">$30.00 USD</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/books/Book1.png" alt="" />
+            <div class="col">
+              <div class="row">
+                <div class="info">
+                  <h6 class="name">Atomic One’s</h6>
+                  <p>$30.00 USD</p>
+                </div>
+                <div class="details">
+                  <div class="amounts">
+                    <i class="fa-solid fa-minus"></i>
+                    <div class="quantity">0</div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+
+              <div class="price">
+                <h6>Subtotal price: </h6>
+                <span class="subPrice">$30.00 USD</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/books/Book1.png" alt="" />
+            <div class="col">
+              <div class="row">
+                <div class="info">
+                  <h6 class="name">Atomic One’s</h6>
+                  <p>$30.00 USD</p>
+                </div>
+                <div class="details">
+                  <div class="amounts">
+                    <i class="fa-solid fa-minus"></i>
+                    <div class="quantity">0</div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+
+              <div class="price">
+                <h6>Subtotal price: </h6>
+                <span class="subPrice">$30.00 USD</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/books/Book1.png" alt="" />
+            <div class="col">
+              <div class="row">
+                <div class="info">
+                  <h6 class="name">Atomic One’s</h6>
+                  <p>$30.00 USD</p>
+                </div>
+                <div class="details">
+                  <div class="amounts">
+                    <i class="fa-solid fa-minus"></i>
+                    <div class="quantity">0</div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+
+              <div class="price">
+                <h6>Subtotal price: </h6>
+                <span class="subPrice">$30.00 USD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checking">
+          <div class="totalPrice">
+            <h4>Total Price:</h4>
+            <span>$1235 USD</span>
+          </div>
+          <div class="buttons">
+            <button class="btn">Checkout</button>
+            <button class="btn-outline">Clear All</button>
+          </div>
+        </div>
+      </section>
+      <!-- -x- Cart -x- -->
+    </main>
+    <!-- =============x============= MAIN SECTION =============x============= -->
+
+    <!-- =========================== FOOTER SECTION =========================== -->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <a class="logo" href="index.html">
+            <img src="./assets/icons/logo.svg" alt="Logo" />
+            <h1>Pages</h1>
+          </a>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="footer-menu">
+            <li>
+              <img src="./assets/icons/dots.svg" alt="" />
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <img src="./assets/icons/dots.svg" alt="" />
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <img src="./assets/icons/dots.svg" alt="" />
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <img src="./assets/icons/dots.svg" alt="" />
+              <a href="store.html">Store</a>
+            </li>
+            <li>
+              <img src="./assets/icons/dots.svg" alt="" />
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5 class="footer-title">Keep in Touch</h5>
+          <ul class="footer-menu">
+            <li>
+              <h6>Address :</h6>
+              <span>24A Kingston St, Los Vegas NC 28202, USA.</span>
+            </li>
+            <li>
+              <h6>Mail :</h6>
+              <span>support@doctors.com</span>
+            </li>
+            <li>
+              <h6>Phone :</h6>
+              <span>(+22) 123 - 4567 - 900</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>&copy;All rights protected.</p>
+    </footer>
+
+    <!-- =============x============= FOOTER SECTION =============x============= -->
+
+    <!-- JavaScript Files -->
+    <!-- Custom JS File -->
+    <script src="./js/cart.js"></script>
+    <!-- Mobil Menu JS -->
+    <script src="./js/mobileMenu.js"></script>
+  </body>
+</html>

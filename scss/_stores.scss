@@ -1,0 +1,449 @@
+// Book item lists
+.booksList {
+  .lists {
+    @include displayGrid(repeat(1, 1fr), unset, 2rem);
+    place-items: center;
+    justify-content: center;
+    .item {
+      width: 100%;
+      @include displayFlex(center, center, column);
+      gap: 1rem;
+      .image {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        padding: 2rem 0;
+        background: rgba($secondary-gray, 0.1);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .smallImg {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 1.6rem;
+          right: 3.5rem;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .info {
+        width: 20rem;
+        @include displayFlex(flex-start, center, column);
+        gap: 1rem;
+        .row {
+          width: 100%;
+          @include displayFlex(center, space-between, row);
+          .subtitle {
+            @include textTitle($primary-blue, left);
+          }
+          .price {
+            display: block;
+            @include text($primary-yellow, left, $fontSize-body5);
+            font-weight: 500;
+          }
+        }
+        p {
+          @include text($secondary-gray, left, $fontSize-body6);
+          line-height: 1.5;
+        }
+        .type {
+          @include displayFlex(center, unset, row);
+          gap: 1rem;
+          h4 {
+            @include text($primary-blue, left, $fontSize-body5);
+            font-weight: 500;
+          }
+        }
+        .btn-outline {
+          @include btnOutline(
+            100%,
+            $primary-blue,
+            $primary-blue,
+            $primary-blue,
+            $white
+          );
+        }
+      }
+    }
+  }
+}
+
+.amounts {
+  @include displayFlex(center, unset, row);
+  gap: 1rem;
+  border: 2px solid $primary-yellow;
+  height: 3.5rem;
+  padding-inline: 1rem;
+  @include text($primary-blue, center, $fontSize-body4);
+  font-weight: 600;
+  i {
+    color: $primary-yellow;
+  }
+}
+
+// Books Details
+.book-details {
+  @include displayGrid(repeat(1, 1fr), unset, 2rem);
+  place-items: center;
+  justify-content: center;
+  .image {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem 0;
+    background: rgba($secondary-gray, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .smallImg {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 1.6rem;
+      right: 3.5rem;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .info {
+    width: 20rem;
+    @include displayFlex(flex-start, center, column);
+    gap: 1rem;
+    .subtitle {
+      @include textTitle($primary-blue, left);
+    }
+    .price {
+      display: block;
+      @include text($primary-yellow, left, $fontSize-body5);
+      font-weight: 500;
+    }
+    p {
+      @include text($secondary-gray, left, $fontSize-body5);
+      line-height: 1.5;
+    }
+    .details {
+      width: 100%;
+      @include displayFlex(flex-start, center, column);
+      gap: 1rem;
+      li {
+        @include displayFlex(center, unset, row);
+        gap: 1rem;
+        @include text($secondary-gray, left, $fontSize-body5);
+        span {
+          display: block;
+        }
+      }
+    }
+    .inputBx {
+      @include displayFlex(center, center, column);
+      gap: 1rem;
+      input[type="number"] {
+        @include input(100%, $fontSize-body4, $primary-blue, $primary-yellow);
+        outline: 2px solid $primary-yellow;
+        padding-left: 2rem;
+        text-align: center;
+      }
+      .btn {
+        @include displayFlex(center, center, row);
+        gap: 1rem;
+
+        @include btn(
+          20rem,
+          $primary-yellow,
+          $white,
+          $primary-blue,
+          $primary-blue
+        );
+      }
+    }
+  }
+}
+// Tabs
+.infoTabs {
+  .tabs {
+    margin-bottom: 4rem;
+    @include displayFlex(center, center, column);
+    gap: 1rem;
+    .tab {
+      @include btn(
+        100%,
+        rgba($secondary-gray, 0.1),
+        $primary-blue,
+        $primary-blue,
+        $primary-blue
+      );
+      padding: 0.8rem;
+      &:hover {
+        color: $brightWhite;
+      }
+      &.active {
+        background: $primary-blue;
+        color: $brightWhite;
+      }
+    }
+  }
+  .tabcontent {
+    @include displayFlex(center, center, column);
+    gap: 1.5rem;
+    .subtitle {
+      @include textTitle($primary-blue, center);
+    }
+    p {
+      @include text($secondary-gray, center, $fontSize-body5);
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+  }
+}
+// Details Banner
+.details-banner {
+  @include displayGrid(repeat(1, 1fr), unset, 4rem);
+  background: $primary-yellow;
+  .item {
+    width: 100%;
+    @include displayFlex(center, center, column);
+    gap: 1rem;
+    .icon {
+      width: 3rem;
+      height: 3rem;
+      background: $primary-blue;
+      i {
+        font-size: $fontSize-body2;
+        color: $brightWhite;
+        text-align: center;
+        padding: 0.5rem;
+      }
+    }
+    .subtitle {
+      @include textTitle($primary-blue, center);
+    }
+    p {
+      @include text($primary-blue, center, $fontSize-body5);
+    }
+  }
+}
+
+// Cart Section
+.cartSection {
+  width: 100%;
+  @include displayGrid(repeat(1, 1fr), unset, 4rem);
+  justify-content: center;
+  place-items: center;
+  .lists {
+    width: 100%;
+    @include displayFlex(center, center, column);
+    gap: 1.5rem;
+    height: 26rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-inline: 2rem;
+    .item {
+      width: 24rem;
+      height: 14rem;
+      background: rgba($secondary-gray, 0.1);
+      padding: 1rem;
+      @include displayFlex(flex-start, unset, row);
+      .col {
+        @include displayFlex(flex-start, unset, column);
+        gap: 2rem;
+        // gap: 3.5rem;
+        .row {
+          // padding-top: 2rem;
+          @include displayFlex(center, unset, column);
+          gap: 2rem;
+          .info {
+            @include displayFlex(flex-start, unset, column);
+            .name {
+              @include text($primary-blue, left, $fontSize-body4);
+              font-weight: 500;
+            }
+            p {
+              @include text($secondary-gray, left, $fontSize-body5);
+              line-height: 1.5;
+            }
+          }
+          .details {
+            @include displayFlex(center, space-between, row);
+            gap: 1rem;
+            .amounts {
+              gap: 0.5rem;
+              padding-inline: 0.5rem;
+              height: 2rem;
+            }
+            .fa-trash {
+              color: $error-clr;
+              font-size: $fontSize-body3;
+            }
+          }
+        }
+        .price {
+          width: 100%;
+          @include displayFlex(baseline, space-between, row);
+          gap: 1rem;
+          h6 {
+            @include text($primary-blue, left, $fontSize-body5);
+          }
+          span {
+            display: block;
+            @include text($primary-blue, left, $fontSize-body6);
+            font-weight: 700;
+          }
+        }
+      }
+
+      img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: contain;
+      }
+    }
+  }
+  .checking {
+    width: 100%;
+    @include displayFlex(flex-start,center,column);
+    gap: 5rem;
+    .totalPrice {
+      width: 100%;
+      @include displayFlex(center, space-between, row);
+      border-bottom: 1px solid $secondary-gray;
+      padding-bottom: 1rem;
+        h4{
+          @include textTitle($primary-blue,left);
+        }
+        span{
+          @include textTitle($error-clr, left);
+        }
+ 
+    }
+    .buttons{
+      width: 100%;
+      @include displayFlex(center,center,column);
+      gap: 2rem;
+      .btn{
+        @include btn(100%, $primary-blue, $white, $primary-yellow, $primary-yellow);
+      }
+      .btn-outline{
+        @include btn(100%, $error-clr, $white, $primary-blue, $white);
+      }
+    }
+  }
+}
+
+/** 
+*?===============================  MEDIA QUERIES ===============================================================**/
+
+@media (min-width: 768px) {
+  // Book item lists
+  .booksList {
+    .lists {
+      @include displayGrid(repeat(2, 1fr), unset, 2rem);
+    }
+  }
+  // Books Details
+  .book-details {
+    grid-template-columns: 26rem 20rem;
+    align-items: flex-start;
+    .image {
+      width: 26rem;
+      height: 30rem;
+    }
+    .info {
+      .inputBx {
+        flex-direction: row;
+        input[type="number"] {
+          width: 4rem;
+          padding: 0;
+        }
+        .btn {
+          width: 14rem;
+        }
+      }
+    }
+  }
+  // Tabs
+  .infoTabs {
+    .tabs {
+      flex-direction: row;
+      .tab {
+        width: 20rem;
+      }
+    }
+    .tabcontent {
+      padding-inline: 4rem;
+      flex-direction: row;
+      gap: 2rem;
+      .subtitle,
+      p {
+        text-align: left;
+      }
+    }
+  }
+  // Details Banner
+  .details-banner {
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    place-items: center;
+    .item {
+      width: 20rem;
+    }
+  }
+  // ============================================================
+}
+
+@media (min-width: 960px) {
+  // Cart Section
+  .cartSection {
+    width: 100%;
+    @include displayGrid(repeat(2, 1fr), unset, 4rem);
+    align-items: flex-start;
+    .lists {
+      .item {
+        width: 28rem;
+        gap: 1rem;
+        .row {
+          padding-top: 2rem;
+          flex-direction: row !important;
+        }
+      }
+    }
+    .checking {
+      padding-top: 4rem;
+      
+    }
+  }
+}
+// For large screen devices...
+@media (min-width: 1040px) {
+  // Book item lists
+  .booksList {
+    .lists {
+      @include displayGrid(repeat(3, 1fr), unset, 4rem);
+    }
+  }
+  // Books Details
+  .book-details {
+    gap: 4rem;
+    grid-template-columns: 26rem 30rem;
+    .info {
+      width: 30rem;
+      gap: 1.5rem;
+      .inputBx {
+        margin-top: 2rem;
+      }
+    }
+  }
+  // Details Banner
+  .details-banner {
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-rows: unset;
+  }
+  // ============================================================
+}
+/** 
+*?==============x=================  MEDIA QUERIES ================x===============================================**/

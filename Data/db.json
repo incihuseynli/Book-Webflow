@@ -1,0 +1,514 @@
+{
+  "about": [
+    {
+      "fullname": "John Abraham",
+      "degree": "Ph.d",
+      "email": "johnabraham@gmail.com",
+      "phone": "(+2) 123 545 9000",
+      "publishedBooks": "02",
+      "reviewPoint": "4.5",
+      "awards": "04",
+      "smallInfo": "All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as necessary, making this the first true value generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.",
+      "country": "United Kingdom",
+      "language": "English",
+      "genre": "Historiography",
+      "publicationDate": "1991",
+      "imageHome": "./assets/images/people/person1.jpg",
+      "imageAboutBig": "./assets/images/people/person1_2.jpg",
+      "imageAboutSmall": "./assets/images/people/person1_3.jpg",
+      "qrCode": "./assets/images/people/qrCoder.png",
+      "authorStory": [
+        {
+          "title": "Great Author Awards - 1996 & 2000",
+          "content": "How to navigate around the interface and toggle on/off the panels you wish to use."
+        },
+        {
+          "title": "10 Times New York Times ® Best Seller",
+          "content": "How to navigate around the interface and toggle on/off the panels you wish to use."
+        },
+        {
+          "title": "Writer of Hack Productivity",
+          "content": "How to navigate around the interface and toggle on/off the panels you wish to use."
+        }
+      ]
+    }
+  ],
+  "allBooks": [
+    {
+      "id": 1,
+      "image": "./assets/images/books/Book1.png",
+      "title": "The Dark Light",
+      "price": "$23.89",
+      "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "type": "Printed Books",
+      "publisher": "Learning Private Limited (1 January 2021)",
+      "language": "English",
+      "paperback": "212 pages",
+      "code": "9788120345799",
+      "dimensions": "20 x 14 x 4 cm",
+      "inStock": "10"
+    },
+    {
+      "id": 2,
+      "image": "./assets/images/books/Book1.png",
+      "title": "The Dark Light",
+      "price": "$33.89",
+      "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "type": "Audio Books",
+      "smallImg": "./assets/icons/listen.svg",
+      "publisher": "Learning Private Limited (1 January 2021)",
+      "language": "English",
+      "paperback": "212 pages",
+      "code": "9788120345799",
+      "dimensions": "20 x 14 x 4 cm",
+      "inStock": "9"
+    },
+    {
+      "id": 3,
+      "image": "./assets/images/books/Book1.png",
+      "title": "The Dark Light",
+      "price": "$53.89",
+      "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "type": "CD Books",
+      "smallImg": "./assets/icons/plak.svg",
+      "publisher": "Learning Private Limited (1 January 2021)",
+      "language": "English",
+      "paperback": "212 pages",
+      "code": "9788120345799",
+      "dimensions": "20 x 14 x 4 cm",
+      "inStock": "5"
+    },
+    {
+      "id": 4,
+      "image": "./assets/images/books/Book2.png",
+      "title": "Atomic One’s",
+      "price": "$33.89",
+      "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "type": "Printed Books",
+      "publisher": "Learning Private Limited (1 January 2021)",
+      "language": "English",
+      "paperback": "212 pages",
+      "code": "9788120345799",
+      "dimensions": "20 x 14 x 4 cm",
+      "inStock": "12"
+    },
+    {
+      "id": 5,
+      "image": "./assets/images/books/Book2.png",
+      "title": "Atomic One’s",
+      "price": "$43.89",
+      "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "type": "Audio Books",
+      "smallImg": "./assets/icons/listen.svg",
+      "publisher": "Learning Private Limited (1 January 2021)",
+      "language": "English",
+      "paperback": "212 pages",
+      "code": "9788120345799",
+      "dimensions": "20 x 14 x 4 cm",
+      "inStock": "14"
+    },
+    {
+      "id": 6,
+      "image": "./assets/images/books/Book2.png",
+      "title": "Atomic One’s",
+      "price": "$33.89",
+      "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "type": "CD Books",
+      "smallImg": "./assets/icons/plak.svg",
+      "publisher": "Learning Private Limited (1 January 2021)",
+      "language": "English",
+      "paperback": "212 pages",
+      "code": "9788120345799",
+      "dimensions": "20 x 14 x 4 cm",
+      "inStock": "5"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "The Dark Light",
+      "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "pages": "586 pages",
+      "length": "10 Hours",
+      "image": "./assets/images/books/Book1.png",
+      "raiting": "4.00",
+      "voteCounts": "260"
+    },
+    {
+      "id": 2,
+      "title": "Atomic One’s",
+      "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "pages": "376 pages",
+      "length": "8 Hours",
+      "image": "./assets/images/books/Book2.png",
+      "raiting": "4.5",
+      "voteCounts": "305"
+    }
+  ],
+  "trustedStores": [
+    {
+      "storeName": "Amazen Corp",
+      "info": "A long established fact that a who looking at its layout.",
+      "image": "./assets/images/brands/brand1.png"
+    },
+    {
+      "storeName": "Megan Books",
+      "info": "A long established fact that a who looking at its layout.",
+      "image": "./assets/images/brands/brand2.png"
+    },
+    {
+      "storeName": "Los Books",
+      "info": "A long established fact that a who looking at its layout.",
+      "image": "./assets/images/brands/brand3.png"
+    },
+    {
+      "storeName": "Urban Lib",
+      "info": "A long established fact that a who looking at its layout.",
+      "image": "./assets/images/brands/brand4.png"
+    }
+  ],
+
+  "reasons": [
+    {
+      "id": "01",
+      "content": "Use HDFS & Map Reduce for storing & analyzing data at scale."
+    },
+    {
+      "id": "02",
+      "content": "Consume streaming data using Spark Streaming, Flink, and Storm."
+    },
+    {
+      "id": "03",
+      "content": "Choose an appropriate data storage technology for your application"
+    },
+    {
+      "id": "04",
+      "content": "Analyze non-relational data using HBase, Cassandra, and MongoDB."
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Chapter- 01 Get Started Intro",
+      "content": "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
+      "pages": "85 pages",
+      "length": "1 Hour 15 mins"
+    },
+    {
+      "id": 2,
+      "title": "Chapter- 02 Create a Massive Content",
+      "content": "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
+      "pages": "120 pages",
+      "length": "1 Hour 40 mins"
+    },
+    {
+      "id": 3,
+      "title": "Chapter- 03 Maintaining the Creative Arcs",
+      "content": "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
+      "pages": "65 pages",
+      "length": "45 mins"
+    },
+    {
+      "id": 4,
+      "title": "Chapter- 04 The Conclusion",
+      "content": "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
+      "pages": "285 pages",
+      "length": "2 Hour 25 mins"
+    }
+  ],
+  "reviews": [
+    {
+      "title": "What Readers Say About the Book",
+      "text": "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.",
+      "ratingOverall": "4.8/5",
+      "review": [
+        {
+          "id": 1,
+          "username": "Martin Philips",
+          "rate": "4.5",
+          "spotlightSentence": "“ Awesome Impact ”",
+          "content": "All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value.",
+          "image": "./assets/images/people/pp1.png"
+        },
+        {
+          "id": 2,
+          "username": "James Anderson",
+          "rate": "4.5",
+          "spotlightSentence": "“ Mind Blowing Words ”",
+          "content": "All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value.",
+          "image": "./assets/images/people/pp2.png"
+        },
+        {
+          "id": 3,
+          "username": "Christina Louis",
+          "rate": "4.00",
+          "spotlightSentence": "“ Great Books Collections ”",
+          "content": "All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value.",
+          "image": "./assets/images/people/pp3.png"
+        }
+      ]
+    }
+  ],
+  "banner": [
+    {
+      "title": "Get Book Copy Today!",
+      "content": "This the first true value generator on the Internet. It uses alphas dictionary of over 200 Latin words.",
+      "image": "./assets/images/banner_img.png"
+    }
+  ],
+  "details": [
+    {
+      "title": "Do you offer discounts for education?",
+      "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, bypassed injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+      "title": "Is this book for me?",
+      "content": "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
+    }
+  ],
+  "productDescription": [
+    {
+      "title": "Do you offer discounts for education?",
+      "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, bypassed injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+      "title": "Is this book for me?",
+      "content": "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
+    }
+  ],
+  "additionalInfo": [
+    {
+      "title": "This is a title 1",
+      "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, bypassed injected humour, or randomised words which don't look even slightly believable."
+    },
+    {
+      "title": "This is a title 2",
+      "content": "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
+    }
+  ],
+  "detailsBanner": [
+    {
+      "title": "Secure Payments",
+      "content": "There are many variations of passages of alteration in some form."
+    },
+    {
+      "title": "Free Shipping",
+      "content": "There are many variations of passages of alteration in some form."
+    },
+    {
+      "title": "100% Satisfactions",
+      "content": "There are many variations of passages of alteration in some form."
+    }
+  ],
+  "contact": [
+    {
+      "title": "Keep in Touch",
+      "info": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+      "address": "No: 09a, Downtown, San Dieago, USA.",
+      "email": "support@pages.com",
+      "phone": "1-800-123-9999"
+    }
+  ],
+  "FAQ": [
+    {
+      "id": 1,
+      "question": "Do you offer discounts for education?",
+      "answer": "Many desktop publishing packages and web page editors to now use Lorem Ipsum as their default model text, and angle uncover many web sites still in their infancy."
+    },
+    {
+      "id": 2,
+      "question": "Is Hack Producivity book available on the one stores?",
+      "answer": "Many desktop publishing packages and web page editors to now use Lorem Ipsum as their default model text, and angle uncover many web sites still in their infancy."
+    },
+    {
+      "id": 3,
+      "question": "What is Hack Productivity book about?",
+      "answer": "Many desktop publishing packages and web page editors to now use Lorem Ipsum as their default model text, and angle uncover many web sites still in their infancy."
+    },
+    {
+      "id": 4,
+      "question": "Where can I get Hack Productivity book?",
+      "answer": "Many desktop publishing packages and web page editors to now use Lorem Ipsum as their default model text, and angle uncover many web sites still in their infancy."
+    },
+    {
+      "id": 5,
+      "question": "Is Hack Producivity book available on the one stores?",
+      "answer": "Many desktop publishing packages and web page editors to now use Lorem Ipsum as their default model text, and angle uncover many web sites still in their infancy."
+    },
+    {
+      "id": 6,
+      "question": "What is Hack Productivity book about?",
+      "answer": "Many desktop publishing packages and web page editors to now use Lorem Ipsum as their default model text, and angle uncover many web sites still in their infancy."
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Significant reading has more info number",
+      "info": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "date": "23.05.2022",
+      "image": "./assets/images/postImages/post_img1.png",
+      "tag": "Classics",
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majorithave suffered alteration in some form, by injected humour, or randomised words whicdon't look even slightly believable. If you are going to use a passage of Lorem Ipsum, need to be sure there isn't anything embarrassing hidden in the middle of text. All thLorem Ipsum generators on the Internet tend.",
+      "subtitle": "The perfect book for all",
+      "subContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has less normal distribution of letters, as opposed.",
+      "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels.”",
+      "list": [
+        {
+          "listItem": "It has roots in a piece of classical Latin literature from 45 BC,"
+        },
+        { "listItem": "To generate Lorem Ipsum which looks reasonable" },
+        {
+          "listItem": "The first line of Lorem Ipsum, Lorem ipsum” dolor sit amet"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Release of Letraset sheets tools containing passages",
+      "info": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "date": "06.01.2022",
+      "image": "./assets/images/postImages/post_img2.png",
+      "tag": "Classics",
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majorithave suffered alteration in some form, by injected humour, or randomised words whicdon't look even slightly believable. If you are going to use a passage of Lorem Ipsum, need to be sure there isn't anything embarrassing hidden in the middle of text. All thLorem Ipsum generators on the Internet tend.",
+      "subtitle": "The perfect book for all",
+      "subContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has less normal distribution of letters, as opposed.",
+      "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels.”",
+      "list": [
+        {
+          "listItem": "It has roots in a piece of classical Latin literature from 45 BC,"
+        },
+        { "listItem": "To generate Lorem Ipsum which looks reasonable" },
+        {
+          "listItem": "The first line of Lorem Ipsum, Lorem ipsum” dolor sit amet"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The energy efficiency offers hydrotherapy or swim",
+      "info": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "date": "25.06.2022",
+      "image": "./assets/images/postImages/post_img3.png",
+      "tag": "Classics",
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majorithave suffered alteration in some form, by injected humour, or randomised words whicdon't look even slightly believable. If you are going to use a passage of Lorem Ipsum, need to be sure there isn't anything embarrassing hidden in the middle of text. All thLorem Ipsum generators on the Internet tend.",
+      "subtitle": "The perfect book for all",
+      "subContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has less normal distribution of letters, as opposed.",
+      "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels.”",
+      "list": [
+        {
+          "listItem": "It has roots in a piece of classical Latin literature from 45 BC,"
+        },
+        { "listItem": "To generate Lorem Ipsum which looks reasonable" },
+        {
+          "listItem": "The first line of Lorem Ipsum, Lorem ipsum” dolor sit amet"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The energy efficiency offers hydrotherapy or swim",
+      "info": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "date": "12.07.2022",
+      "image": "./assets/images/postImages/post_img4.png",
+      "tag": "Classics",
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majorithave suffered alteration in some form, by injected humour, or randomised words whicdon't look even slightly believable. If you are going to use a passage of Lorem Ipsum, need to be sure there isn't anything embarrassing hidden in the middle of text. All thLorem Ipsum generators on the Internet tend.",
+      "subtitle": "The perfect book for all",
+      "subContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has less normal distribution of letters, as opposed.",
+      "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels.”",
+      "list": [
+        {
+          "listItem": "It has roots in a piece of classical Latin literature from 45 BC,"
+        },
+        { "listItem": "To generate Lorem Ipsum which looks reasonable" },
+        {
+          "listItem": "The first line of Lorem Ipsum, Lorem ipsum” dolor sit amet"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Release of Letraset sheets tools containing passages",
+      "info": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "date": "11.10.2022",
+      "image": "./assets/images/postImages/post_img5.png",
+      "tag": "Classics",
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majorithave suffered alteration in some form, by injected humour, or randomised words whicdon't look even slightly believable. If you are going to use a passage of Lorem Ipsum, need to be sure there isn't anything embarrassing hidden in the middle of text. All thLorem Ipsum generators on the Internet tend.",
+      "subtitle": "The perfect book for all",
+      "subContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has less normal distribution of letters, as opposed.",
+      "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels.”",
+      "list": [
+        {
+          "listItem": "It has roots in a piece of classical Latin literature from 45 BC,"
+        },
+        { "listItem": "To generate Lorem Ipsum which looks reasonable" },
+        {
+          "listItem": "The first line of Lorem Ipsum, Lorem ipsum” dolor sit amet"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The energy efficiency offers hydrotherapy or swim",
+      "info": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "date": "20.12.2022",
+      "image": "./assets/images/postImages/post_img6.png",
+      "tag": "Classics",
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majorithave suffered alteration in some form, by injected humour, or randomised words whicdon't look even slightly believable. If you are going to use a passage of Lorem Ipsum, need to be sure there isn't anything embarrassing hidden in the middle of text. All thLorem Ipsum generators on the Internet tend.",
+      "subtitle": "The perfect book for all",
+      "subContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has less normal distribution of letters, as opposed.",
+      "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels.”",
+      "list": [
+        {
+          "listItem": "It has roots in a piece of classical Latin literature from 45 BC,"
+        },
+        { "listItem": "To generate Lorem Ipsum which looks reasonable" },
+        {
+          "listItem": "The first line of Lorem Ipsum, Lorem ipsum” dolor sit amet"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "The energy efficiency offers hydrotherapy or swim",
+      "info": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "date": "05.05.2023",
+      "image": "./assets/images/postImages/post_img7.png",
+      "tag": "Classics",
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majorithave suffered alteration in some form, by injected humour, or randomised words whicdon't look even slightly believable. If you are going to use a passage of Lorem Ipsum, need to be sure there isn't anything embarrassing hidden in the middle of text. All thLorem Ipsum generators on the Internet tend.",
+      "subtitle": "The perfect book for all",
+      "subContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has less normal distribution of letters, as opposed.",
+      "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels.”",
+      "list": [
+        {
+          "listItem": "It has roots in a piece of classical Latin literature from 45 BC,"
+        },
+        { "listItem": "To generate Lorem Ipsum which looks reasonable" },
+        {
+          "listItem": "The first line of Lorem Ipsum, Lorem ipsum” dolor sit amet"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Release of Letraset sheets tools containing passages",
+      "info": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "date": "06.23.2023",
+      "image": "./assets/images/postImages/post_img8.png",
+      "tag": "Classics",
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majorithave suffered alteration in some form, by injected humour, or randomised words whicdon't look even slightly believable. If you are going to use a passage of Lorem Ipsum, need to be sure there isn't anything embarrassing hidden in the middle of text. All thLorem Ipsum generators on the Internet tend.",
+      "subtitle": "The perfect book for all",
+      "subContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has less normal distribution of letters, as opposed.",
+      "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels.”",
+      "list": [
+        {
+          "listItem": "It has roots in a piece of classical Latin literature from 45 BC,"
+        },
+        { "listItem": "To generate Lorem Ipsum which looks reasonable" },
+        {
+          "listItem": "The first line of Lorem Ipsum, Lorem ipsum” dolor sit amet"
+        }
+      ]
+    }
+  ]
+}

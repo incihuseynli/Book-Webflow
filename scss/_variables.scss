@@ -1,0 +1,207 @@
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap");
+$font-title: "Cardo", serif;
+$font-body: "Inter", sans-serif;
+
+// Margins and Paddings
+$lg: 4rem;
+$md: 2rem;
+$sm: 1rem;
+
+// Colors
+$primary-blue: #1b3764;
+$primary-yellow: #ffca42;
+$white: #f6f8fc;
+$brightWhite: #fdfdfd;
+$secondary-gray: #969aa0;
+$error-clr: #bb0505;
+
+// Font Sizes
+
+$fontSize-heading: 4rem;
+$fontSize-title1: 3.5rem;
+$fontSize-title2: 2.5rem;
+
+$fontSize-body1: 2rem;
+$fontSize-body2: 1.5rem;
+$fontSize-body3: 1.25rem;
+$fontSize-body4: 1rem;
+$fontSize-body5: 0.875rem;
+$fontSize-body6: 0.75rem;
+$fontSize-body7: 0.625rem;
+
+$boxShadow1: 10px 19px 30px 0px rgba(0, 0, 0, 0.1);
+// Mixins
+@mixin displayFlex($alignItems, $justifyContent, $dir) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  flex-direction: $dir;
+}
+
+@mixin displayGrid($col, $row, $gap) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: $row;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin heading($clr, $textAlign) {
+  color: $clr;
+  font-family: $font-title;
+  font-size: $fontSize-heading;
+  font-weight: 700;
+  letter-spacing: -0.08125rem;
+  text-align: $textAlign;
+}
+@mixin secTitle($clr, $textAlign) {
+  color: $clr;
+  text-align: $textAlign;
+  font-family: $font-title;
+  font-size: $fontSize-title2;
+  font-weight: 700;
+  letter-spacing: -0.05625rem;
+}
+@mixin pageTitle($clr, $textAlign) {
+  color: $clr;
+  text-align: $textAlign;
+  font-family: $font-title;
+  font-size: $fontSize-title2;
+  font-weight: 700;
+  letter-spacing: -0.0625rem;
+}
+
+@mixin textTitle($clr, $textAlign) {
+  color: $clr;
+  text-align: $textAlign;
+  font-family: $font-title;
+  font-size: $fontSize-body2;
+  font-weight: 700;
+  letter-spacing: -0.015rem;
+}
+@mixin text($clr, $textAlign, $fontSize) {
+  color: $clr;
+  text-align: $textAlign;
+  font-family: $font-body;
+  font-size: $fontSize;
+  font-weight: 400;
+  letter-spacing: -0.01188rem;
+}
+@mixin tagTitle($clr, $textAlign, $fontSize) {
+  color: $clr;
+  text-align: $textAlign;
+  font-family: $font-title;
+  font-size: $fontSize;
+  font-weight: 400;
+  font-style: italic;
+}
+@mixin btn($width, $bgClr, $clr, $hoverBgClr, $borderClr) {
+  width: $width;
+  background: $bgClr;
+  color: $clr;
+  height: 3.5rem;
+  font-size: $fontSize-body3;
+  text-align: center;
+  transition: 0.8s;
+  border: 2px solid inherit;
+  text-transform: capitalize;
+  cursor: pointer;
+  a {
+    color: $clr;
+  }
+  &:hover {
+    background: $hoverBgClr;
+    border: 2px solid $borderClr;
+  }
+}
+@mixin btnOutline($width, $clr, $hoverBgClr, $borderClr, $hoverClr) {
+  width: $width;
+  background: transparent;
+  color: $clr;
+  padding: 1rem;
+  height: 3.5rem;
+  font-size: $fontSize-body3;
+  text-align: center;
+  transition: 0.8s;
+  border: 2px solid $borderClr;
+  text-transform: capitalize;
+
+  a {
+    color: $clr;
+  }
+  &:hover {
+    background: $hoverBgClr;
+    border: 2px solid transparent;
+    color: $hoverClr;
+    a {
+      color: $hoverClr;
+    }
+  }
+}
+@mixin btnText($width, $clr) {
+  width: $width;
+  color: $clr;
+  padding: 1rem;
+  height: 3.5rem;
+  font-size: $fontSize-body3;
+  text-align: center;
+  transition: 0.8s;
+  text-transform: capitalize;
+  a {
+    color: $clr;
+  }
+  &:hover {
+    a {
+      text-decoration: underline;
+      text-underline-offset: 0.3rem;
+    }
+  }
+}
+@mixin line() {
+  width: 2rem;
+  height: 2px;
+  background: $primary-yellow;
+  border-radius: 1rem;
+}
+@mixin input($width, $fontSize, $clr, $outlineClr) {
+  width: $width;
+  outline: none;
+  border: none;
+  padding: 1.5rem;
+  height: 3.5rem;
+  text-align: left;
+  font-size: $fontSize;
+  letter-spacing: 0.125rem;
+  line-height: 1.5;
+  color: $clr;
+  transition: 0.6s;
+  &::placeholder,
+  &::-moz-placeholder {
+    color: $secondary-gray;
+    font-size: $fontSize;
+  }
+  &:focus {
+    outline: 2px solid $outlineClr;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1rem;
+  border-radius: 0.18rem;
+  border: 0.5px solid $secondary-gray;
+  accent-color: $primary-yellow;
+  background: $brightWhite; 
+}

@@ -1,0 +1,47 @@
+.error-message {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: url("../assets/images/404_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include displayFlex(center, center, column);
+  gap: 1.5rem;
+  .image {
+    width: 16rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .subtitle {
+    @include textTitle($primary-blue, center);
+  }
+  p {
+    @include text($secondary-gray, center, $fontSize-body4);
+    // width: 30rem;
+  }
+  .btn {
+    @include btn(
+      14rem,
+      $primary-yellow,
+      $primary-blue,
+      transparent,
+      $primary-blue
+    );
+  }
+}
+/** 
+*?================================  MEDIA QUERIES ================================================================**/
+
+// for medium screens (tablets, small laptops etc..)
+@media (min-width: 768px) {
+  .error-message {
+    p {
+      width: 30rem;
+    }
+  }
+}
+/** 
+*?===============x================  MEDIA QUERIES ===============x================================================**/
