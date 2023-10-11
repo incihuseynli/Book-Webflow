@@ -845,7 +845,7 @@ input[type=checkbox] {
   justify-content: center;
   flex-direction: column;
   gap: 1.5rem;
-  height: 26rem;
+  height: 15rem;
   overflow-y: scroll;
   overflow-x: hidden;
   padding-inline: 2rem;
@@ -951,7 +951,7 @@ input[type=checkbox] {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
 }
 .cartSection .checking .totalPrice {
   width: 100%;
@@ -1024,6 +1024,40 @@ input[type=checkbox] {
   background: #1b3764;
   border: 2px solid #f6f8fc;
 }
+.cartSection.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.cartSection.empty span {
+  color: #969aa0;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.01188rem;
+}
+.cartSection.empty .btn {
+  width: 14rem;
+  background: #1b3764;
+  color: #f6f8fc;
+  height: 3.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  transition: 0.8s;
+  border: 2px solid inherit;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.cartSection.empty .btn a {
+  color: #f6f8fc;
+}
+.cartSection.empty .btn:hover {
+  background: #ffca42;
+  border: 2px solid #ffca42;
+}
 
 /** 
 *?===============================  MEDIA QUERIES ===============================================================**/
@@ -1095,9 +1129,6 @@ input[type=checkbox] {
   .cartSection .lists .item .row {
     padding-top: 2rem;
     flex-direction: row !important;
-  }
-  .cartSection .checking {
-    padding-top: 4rem;
   }
 }
 @media (min-width: 1040px) {

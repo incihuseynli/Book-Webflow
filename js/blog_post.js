@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   async function DisplayPostDetails() {
     const BLOG_URL = new URLSearchParams(document.location.search);
     let id = BLOG_URL.get("id");
-    let res = await fetch(`http://localhost:3003/news/${id}`);
+    // let res = await fetch(`http://localhost:3003/news/${id}`);
+    let res = await fetch(`https://my-json-server.typicode.com/incihuseynli/NewsData/news/${id}`);
     let blogPost = await res.json();
     console.log(blogPost);
     detailsContainer.innerHTML += `

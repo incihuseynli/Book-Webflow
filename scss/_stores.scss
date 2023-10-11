@@ -238,7 +238,7 @@
     width: 100%;
     @include displayFlex(center, center, column);
     gap: 1.5rem;
-    height: 26rem;
+    height: 15rem;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-inline: 2rem;
@@ -306,7 +306,7 @@
   .checking {
     width: 100%;
     @include displayFlex(flex-start,center,column);
-    gap: 5rem;
+    gap: 2rem;
     .totalPrice {
       width: 100%;
       @include displayFlex(center, space-between, row);
@@ -330,6 +330,16 @@
       .btn-outline{
         @include btn(100%, $error-clr, $white, $primary-blue, $white);
       }
+    }
+  }
+  &.empty{
+    @include displayFlex(center,center,column);
+    gap: 1.5rem;
+    span{
+      @include text($secondary-gray, center, $fontSize-body5);
+    }
+    .btn{
+      @include btn(14rem, $primary-blue, $white, $primary-yellow, $primary-yellow);
     }
   }
 }
@@ -412,10 +422,9 @@
         }
       }
     }
-    .checking {
-      padding-top: 4rem;
-      
-    }
+    // .checking {
+    //   padding-top: 4rem; 
+    // }
   }
 }
 // For large screen devices...

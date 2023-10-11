@@ -14,9 +14,7 @@ let increment = (selectedItem) => {
   update(selectedItem.id);
 
   localStorage.setItem("data", JSON.stringify(basket));
-  displayItemsList(fetchedData);
-  totalPrice(fetchedData);
-
+  displayItemsList(data);
   // console.log(basket);
 };
 
@@ -32,9 +30,7 @@ let decrement = (selectedItem) => {
   update(selectedItem.id);
   basket = basket.filter((x) => x.item !== 0);
   localStorage.setItem("data", JSON.stringify(basket));
-  displayItemsList(fetchedData);
-  totalPrice(fetchedData);
-
+  displayItemsList(data);
   // console.log(basket);
 };
 
@@ -49,16 +45,9 @@ let remove = (id) => {
   basket = basket.filter((x) => x.id !== id);
   // displayItemsList(data);
   localStorage.setItem("data", JSON.stringify(basket));
-  displayItemsList(fetchedData);
+  displayItemsList(data);
 };
-//  Clear All Items in Cart
-const clearAllBtn = document.querySelector(".checking .buttons .btn-outline");
 
-let clearAllItems = () => {
-  basket = [];
-  localStorage.setItem("data", JSON.stringify(basket));
-  displayItemsList(fetchedData);
-};
 // Showing Value inside of Cart Icon
 let calc = () => {
   let cart = document.getElementById("cartAmount");
@@ -69,19 +58,14 @@ calc();
 
 // ================ Getting Datas =============================
 const cartLists = document.querySelector(".lists");
-const cartSection = document.querySelector(".cartSection");
-// const BOOK_URL = "http://localhost:3003/allBooks";
-const BOOK_URL =
-  "https://my-json-server.typicode.com/incihuseynli/BooksData/allBooks";
-let fetchedData = "";
+const BOOK_URL = "http://localhost:3003/allBooks";
+
 fetch(BOOK_URL)
   .then((res) => {
     return res.json();
   })
   .then((data) => {
-    fetchedData = data;
     displayItemsList(data);
-    totalPrice(fetchedData);
   });
 
 let displayItemsList = (data) => {
@@ -109,7 +93,7 @@ let displayItemsList = (data) => {
                   <div class="quantity" id=${id}>${item}</div>
                   <i onclick="increment({ id: ${id} })" class="fa-solid fa-plus"></i>
               </div>
-                <i onclick="remove(${id})"  class="fa-solid fa-trash"></i>
+                <i onclick="remove(${id})" class="fa-solid fa-trash"></i>
               </div>
             </div>
             
@@ -123,30 +107,6 @@ let displayItemsList = (data) => {
       })
       .join(""));
   } else {
-    cartSection.classList.add("empty");
-    cartSection.innerHTML = `
-      <h1 class="title">Your Cart is empty!</h1>
-      <span>Please, add some books from store page for checkout..</span>
-      <button class="btn"><a href="store.html">Show me books</a></button>
-      `;
   }
 };
 // displayItemsList(data);
-
-// Calc Total Prices
-const totalPriceTag = document.querySelector(".totalPriceTag");
-let totalPrice = (data) => {
-  if (basket.length !== 0) {
-    let amount = basket
-      .map(({ id, item }) => {
-        let search = data.find((y) => y.id === id) || [];
-        let price = Math.floor(parseFloat(search.price));
-        let subPrice = item * price;
-        return subPrice;
-      })
-      .reduce((x, y) => x + y, 0);
-    // console.log(amount);
-    totalPriceTag.innerText = `$ ${amount} USD`;
-  } else return;
-};
-totalPrice(fetchedData);

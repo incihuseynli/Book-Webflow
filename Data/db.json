@@ -38,7 +38,7 @@
       "id": 1,
       "image": "./assets/images/books/Book1.png",
       "title": "The Dark Light",
-      "price": "$23.89",
+      "price": "23.89",
       "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
       "type": "Printed Books",
       "publisher": "Learning Private Limited (1 January 2021)",
@@ -52,7 +52,7 @@
       "id": 2,
       "image": "./assets/images/books/Book1.png",
       "title": "The Dark Light",
-      "price": "$33.89",
+      "price": "33.89",
       "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
       "type": "Audio Books",
       "smallImg": "./assets/icons/listen.svg",
@@ -67,7 +67,7 @@
       "id": 3,
       "image": "./assets/images/books/Book1.png",
       "title": "The Dark Light",
-      "price": "$53.89",
+      "price": "53.89",
       "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
       "type": "CD Books",
       "smallImg": "./assets/icons/plak.svg",
@@ -82,7 +82,7 @@
       "id": 4,
       "image": "./assets/images/books/Book2.png",
       "title": "Atomic One’s",
-      "price": "$33.89",
+      "price": "33.89",
       "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
       "type": "Printed Books",
       "publisher": "Learning Private Limited (1 January 2021)",
@@ -96,7 +96,7 @@
       "id": 5,
       "image": "./assets/images/books/Book2.png",
       "title": "Atomic One’s",
-      "price": "$43.89",
+      "price": "43.89",
       "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
       "type": "Audio Books",
       "smallImg": "./assets/icons/listen.svg",
@@ -111,7 +111,7 @@
       "id": 6,
       "image": "./assets/images/books/Book2.png",
       "title": "Atomic One’s",
-      "price": "$33.89",
+      "price": "33.89",
       "info": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
       "type": "CD Books",
       "smallImg": "./assets/icons/plak.svg",
@@ -167,7 +167,6 @@
       "image": "./assets/images/brands/brand4.png"
     }
   ],
-
   "reasons": [
     {
       "id": "01",

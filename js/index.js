@@ -1,6 +1,8 @@
 const heroDetails = document.querySelector(".hero .info .details");
 const heroImg = document.querySelector(".hero .image");
-const BOOK_URL = "http://localhost:3003/books?id=1";
+// const BOOK_URL = "http://localhost:3003/books?id=1";
+const BOOK_URL =
+  "https://my-json-server.typicode.com/incihuseynli/BooksData/books?id=1";
 fetch(BOOK_URL)
   .then((response) => {
     return response.json();
@@ -30,13 +32,15 @@ fetch(BOOK_URL)
     </h4>
   </li>
     `;
-    heroImg.innerHTML += `
+      heroImg.innerHTML += `
     <img src=${image} alt="" />
     `;
     });
   });
 // ======================= About Author Section ==================================
-const ABOUT_AUTHOR = "http://localhost:3003/about";
+// const ABOUT_AUTHOR = "http://localhost:3003/about";
+const ABOUT_AUTHOR =
+  "https://my-json-server.typicode.com/incihuseynli/AboutData/about";
 
 const aboutSec = document.querySelector(".about");
 
@@ -100,7 +104,9 @@ fetch(ABOUT_AUTHOR)
 
 // ======================= Banner Section ==================================
 
-const BANNER_URL = "http://localhost:3003/banner";
+// const BANNER_URL = "http://localhost:3003/banner";
+const BANNER_URL =
+  "https://my-json-server.typicode.com/incihuseynli/BannerData/banner";
 const bannerContainer = document.querySelector(".banner");
 
 fetch(BANNER_URL)
@@ -125,7 +131,8 @@ fetch(BANNER_URL)
 
 //   ====================== Reasons Section ====================================
 
-const REASONS_URL = "http://localhost:3003/reasons";
+// const REASONS_URL = "http://localhost:3003/reasons";
+const REASONS_URL = "https://my-json-server.typicode.com/incihuseynli/ReasonsData/reasons";
 
 const reasonsContainer = document.querySelector(".reasons .cards");
 
@@ -146,7 +153,9 @@ fetch(REASONS_URL)
 
 //   ====================== Chapters Section ====================================
 
-const CHAPTERS_URL = "http://localhost:3003/chapters";
+// const CHAPTERS_URL = "http://localhost:3003/chapters";
+const CHAPTERS_URL =
+  "https://my-json-server.typicode.com/incihuseynli/ChaptersData/chapters";
 
 const chaptersContainer = document.querySelector(".chapters .cards");
 
@@ -183,7 +192,9 @@ fetch(CHAPTERS_URL)
 
 //   ====================== Reviews Section ====================================
 
-const REVIEWS_URL = "http://localhost:3003/reviews";
+// const REVIEWS_URL = "http://localhost:3003/reviews";
+const REVIEWS_URL =
+  "https://my-json-server.typicode.com/incihuseynli/ReviewsData/reviews";
 
 const reviewsCardContainer = document.querySelector(".reviews .cards");
 const reviewsInfo = document.querySelector(".reviews .info");
@@ -243,7 +254,9 @@ fetch(REVIEWS_URL)
 
 //   ====================== Blog Section ====================================
 
-const BLOG_URL = "http://localhost:3003/news?_limit=4";
+// const BLOG_URL = "http://localhost:3003/news?_limit=4";
+const BLOG_URL =
+  "https://my-json-server.typicode.com/incihuseynli/NewsData/news?_limit=4";
 
 const blogContainerCards = document.querySelector(".blogContainer .cards");
 

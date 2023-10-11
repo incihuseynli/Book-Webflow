@@ -1,4 +1,5 @@
-const ABOUT_URL = "http://localhost:3003/about";
+// const ABOUT_URL = "http://localhost:3003/about";
+const ABOUT_URL = "https://my-json-server.typicode.com/incihuseynli/AboutData/about";
 
 const aboutAuthorSection = document.querySelector(".about-author"),
   storyOfAuthorSection = document.querySelector(".authorStory");

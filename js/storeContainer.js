@@ -1,6 +1,7 @@
 // ======================= Trusted Stores Section ==================================
 
-const STORES_URL = "http://localhost:3003/trustedStores";
+// const STORES_URL = "http://localhost:3003/trustedStores";
+const STORES_URL = "https://my-json-server.typicode.com/incihuseynli/TrustedStoresData/trustedStores";
 
 const storesContainer = document.querySelector(".storesContainer");
 

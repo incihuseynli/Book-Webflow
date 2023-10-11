@@ -1,7 +1,8 @@
 const faqContainer = document.querySelector(".faqContainer");
 const questionBx = document.querySelector(".faqContainer .col");
 
-const CONTACT_URL = "http://localhost:3003/FAQ";
+// const CONTACT_URL = "http://localhost:3003/FAQ";
+const CONTACT_URL = "https://my-json-server.typicode.com/incihuseynli/FaqData/FAQ";
 
 fetch(CONTACT_URL)
   .then((response) => {
