@@ -38,7 +38,7 @@ fetch(BOOKS_URL)
                 </li>
               </ul>
               <button class="btn-outline">
-                <a href="book_details.html?id=${id}">Order Today</a></button>
+                <a href="store.html">Order Today</a></button>
             </div>
           </div>
             `;
