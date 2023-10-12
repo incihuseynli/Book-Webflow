@@ -1,5 +1,5 @@
 // const BLOG_URL = "http://localhost:3003/news";
-const BLOG_URL = "https://my-json-server.typicode.com/incihuseynli/NewsData/news";
+const BLOG_URL = "https://my-json-server.typicode.com/incihuseynli/Data2/news";
 
 const blogContainerSection = document.querySelector(
   ".blogContainer.blogPage .cards"
@@ -22,7 +22,6 @@ fetch(BLOG_URL)
           <div class="row">
             <a href="blog_post.html?id=${id}" class="btn-text">Read more</a>
             <div class="date">
-              <a href="#">Author</a> -
               <p class="dateOfPost">${date}</p>
             </div>
           </div>

@@ -58,6 +58,7 @@ let clearAllItems = () => {
   basket = [];
   localStorage.setItem("data", JSON.stringify(basket));
   displayItemsList(fetchedData);
+  location.reload();
 };
 // Showing Value inside of Cart Icon
 let calc = () => {
@@ -72,7 +73,7 @@ const cartLists = document.querySelector(".lists");
 const cartSection = document.querySelector(".cartSection");
 // const BOOK_URL = "http://localhost:3003/allBooks";
 const BOOK_URL =
-  "https://my-json-server.typicode.com/incihuseynli/BooksData/allBooks";
+  "https://my-json-server.typicode.com/incihuseynli/Data1/allBooks";
 let fetchedData = "";
 fetch(BOOK_URL)
   .then((res) => {

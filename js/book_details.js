@@ -54,7 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
   async function DisplayBookDetails() {
     const ALL_BOOKS_URL = new URLSearchParams(document.location.search);
     let id = ALL_BOOKS_URL.get("id");
-    let res = await fetch(`https://my-json-server.typicode.com/incihuseynli/BooksData/allBooks/${id}`);
+    let res = await fetch(
+      `https://my-json-server.typicode.com/incihuseynli/Data1/allBooks/${id}`
+    );
     let bookDetail = await res.json();
     const smIMG = bookDetail.smallImg
       ? `  <div class="smallImg"><img src=${bookDetail.smallImg} alt="" /></div>`
@@ -119,28 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
        </div>  `;
   }
   DisplayBookDetails();
-
-  // =============================== Deatils Banner ==================================================
-  const detailsBanner = document.querySelector(".details-banner");
-  // const DETAILS_BANNER_URL = "http://localhost:3003/detailsBanner";
-  const DETAILS_BANNER_URL = "https://my-json-server.typicode.com/incihuseynli/OtherDatas/detailsBanner";
-  fetch(DETAILS_BANNER_URL)
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      data.forEach(({ title, content }) => {
-        detailsBanner.innerHTML += `
-            <div class="item">
-                <div class="icon">
-                    <i class="fa-solid fa-user-shield"></i>
-                </div>
-                <h4 class="subtitle">${title}</h4>
-                <p>${content}</p>
-            </div>
-        `;
-      });
-    });
 
   const tabs = document.querySelectorAll(".tab");
   const contents = document.querySelectorAll(".tabcontent");

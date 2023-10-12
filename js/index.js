@@ -2,7 +2,7 @@ const heroDetails = document.querySelector(".hero .info .details");
 const heroImg = document.querySelector(".hero .image");
 // const BOOK_URL = "http://localhost:3003/books?id=1";
 const BOOK_URL =
-  "https://my-json-server.typicode.com/incihuseynli/BooksData/books?id=1";
+  "https://my-json-server.typicode.com/incihuseynli/Data1/books?id=1";
 fetch(BOOK_URL)
   .then((response) => {
     return response.json();
@@ -40,7 +40,7 @@ fetch(BOOK_URL)
 // ======================= About Author Section ==================================
 // const ABOUT_AUTHOR = "http://localhost:3003/about";
 const ABOUT_AUTHOR =
-  "https://my-json-server.typicode.com/incihuseynli/AboutData/about";
+  "https://my-json-server.typicode.com/incihuseynli/Data1/about";
 
 const aboutSec = document.querySelector(".about");
 
@@ -102,37 +102,12 @@ fetch(ABOUT_AUTHOR)
     );
   });
 
-// ======================= Banner Section ==================================
 
-// const BANNER_URL = "http://localhost:3003/banner";
-const BANNER_URL =
-  "https://my-json-server.typicode.com/incihuseynli/BannerData/banner";
-const bannerContainer = document.querySelector(".banner");
-
-fetch(BANNER_URL)
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    data.forEach(({ title, content, image }) => {
-      bannerContainer.innerHTML += `
-            <div class="text">
-                <h1 class="bannerTitle">${title}</h1>
-                <div class="line"></div>
-                <p>${content}</p>
-                <button class="btn-outline">Order Today</button>
-            </div>
-            <div class="image">
-                <img src=${image} alt="Banner Image" />
-            </div>
-        `;
-    });
-  });
 
 //   ====================== Reasons Section ====================================
 
 // const REASONS_URL = "http://localhost:3003/reasons";
-const REASONS_URL = "https://my-json-server.typicode.com/incihuseynli/ReasonsData/reasons";
+const REASONS_URL = "https://my-json-server.typicode.com/incihuseynli/Data3/reasons";
 
 const reasonsContainer = document.querySelector(".reasons .cards");
 
@@ -155,7 +130,7 @@ fetch(REASONS_URL)
 
 // const CHAPTERS_URL = "http://localhost:3003/chapters";
 const CHAPTERS_URL =
-  "https://my-json-server.typicode.com/incihuseynli/ChaptersData/chapters";
+  "https://my-json-server.typicode.com/incihuseynli/Data3/chapters";
 
 const chaptersContainer = document.querySelector(".chapters .cards");
 
@@ -194,7 +169,7 @@ fetch(CHAPTERS_URL)
 
 // const REVIEWS_URL = "http://localhost:3003/reviews";
 const REVIEWS_URL =
-  "https://my-json-server.typicode.com/incihuseynli/ReviewsData/reviews";
+  "https://my-json-server.typicode.com/incihuseynli/Data3/reviews";
 
 const reviewsCardContainer = document.querySelector(".reviews .cards");
 const reviewsInfo = document.querySelector(".reviews .info");
@@ -256,7 +231,7 @@ fetch(REVIEWS_URL)
 
 // const BLOG_URL = "http://localhost:3003/news?_limit=4";
 const BLOG_URL =
-  "https://my-json-server.typicode.com/incihuseynli/NewsData/news?_limit=4";
+  "https://my-json-server.typicode.com/incihuseynli/Data2/news?_limit=4";
 
 const blogContainerCards = document.querySelector(".blogContainer .cards");
 
@@ -277,7 +252,6 @@ fetch(BLOG_URL)
               <div class="row">
                 <a href="blog.html?id=${id}" class="btn-text">Read more</a>
                 <div class="date">
-                  <a href="#">Author</a> -
                   <p class="dateOfPost">${date}</p>
                 </div>
               </div>

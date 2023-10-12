@@ -1,5 +1,5 @@
 // const ABOUT_URL = "http://localhost:3003/about";
-const ABOUT_URL = "https://my-json-server.typicode.com/incihuseynli/AboutData/about";
+const ABOUT_URL = "https://my-json-server.typicode.com/incihuseynli/Data1/about";
 
 const aboutAuthorSection = document.querySelector(".about-author"),
   storyOfAuthorSection = document.querySelector(".authorStory");
@@ -65,7 +65,7 @@ fetch(ABOUT_URL)
                 <h4 class="subtitle">About Dr. John Abraham</h4>
                 <div class="line"></div>
                 <p>${smallInfo}</p>
-                <button class="btn">Contact now</button>
+                <button class="btn"><a href="contact.html">Contact now</a></button>
             </div>
       </div>
         `;
