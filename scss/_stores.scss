@@ -236,7 +236,7 @@
   place-items: center;
   .lists {
     width: 100%;
-    @include displayFlex(center, center, column);
+    @include displayFlex(center, flex-start, column);
     gap: 1.5rem;
     height: 15rem;
     overflow-y: scroll;

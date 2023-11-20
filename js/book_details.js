@@ -14,14 +14,13 @@ let increment = (selectedItem) => {
   update(selectedItem.id);
   localStorage.setItem("data", JSON.stringify(basket));
 
-  console.log(basket);
+  // console.log(basket);
 };
 
 // Decrement Function
 let decrement = (selectedItem) => {
   let search = basket.find((x) => x.id === selectedItem.id);
-  if (search === undefined) return;
-  else if (search.item === 0) {
+  if  (search.item === 0) {
     return;
   } else {
     search.item -= 1;
@@ -55,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const ALL_BOOKS_URL = new URLSearchParams(document.location.search);
     let id = ALL_BOOKS_URL.get("id");
     let res = await fetch(
-      `https://my-json-server.typicode.com/incihuseynli/Data1/allBooks/${id}`
+      `https://my-json-server.typicode.com/dbStoreForProjects/Data1/allBooks/${id}`
     );
     let bookDetail = await res.json();
     const smIMG = bookDetail.smallImg

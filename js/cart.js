@@ -23,8 +23,7 @@ let increment = (selectedItem) => {
 // Decrement Function
 let decrement = (selectedItem) => {
   let search = basket.find((x) => x.id === selectedItem.id);
-  if (search === undefined) return;
-  else if (search.item === 0) {
+  if (search.item === 0) {
     return;
   } else {
     search.item -= 1;
@@ -73,7 +72,7 @@ const cartLists = document.querySelector(".lists");
 const cartSection = document.querySelector(".cartSection");
 // const BOOK_URL = "http://localhost:3003/allBooks";
 const BOOK_URL =
-  "https://my-json-server.typicode.com/incihuseynli/Data1/allBooks";
+  "https://my-json-server.typicode.com/dbStoreForProjects/Data1/allBooks";
 let fetchedData = "";
 fetch(BOOK_URL)
   .then((res) => {

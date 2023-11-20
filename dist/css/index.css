@@ -90,7 +90,8 @@ input[type=checkbox] {
 .error-message .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .error-message .subtitle {
   color: #1b3764;
@@ -151,7 +152,8 @@ input[type=checkbox] {
 .about-author .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about-author .row {
   display: grid;
@@ -340,7 +342,8 @@ input[type=checkbox] {
 .authorStory .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .aboutPage .books-container {
@@ -474,7 +477,8 @@ input[type=checkbox] {
 .booksList .lists .item .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .booksList .lists .item .info {
   width: 20rem;
@@ -607,7 +611,8 @@ input[type=checkbox] {
 .book-details .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .book-details .info {
   width: 20rem;
@@ -690,6 +695,10 @@ input[type=checkbox] {
   outline: 2px solid #ffca42;
   padding-left: 2rem;
   text-align: center;
+}
+.book-details .info .inputBx input[type=number]::-moz-placeholder {
+  color: #969aa0;
+  font-size: 1rem;
 }
 .book-details .info .inputBx input[type=number]::placeholder, .book-details .info .inputBx input[type=number]::-moz-placeholder {
   color: #969aa0;
@@ -943,7 +952,8 @@ input[type=checkbox] {
 .cartSection .lists .item img {
   width: 10rem;
   height: 10rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .cartSection .checking {
   width: 100%;
@@ -1167,7 +1177,8 @@ input[type=checkbox] {
 .blogPost-details .postImg {
   width: 100%;
   height: 20rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blogPost-details .tag {
   display: flex;
@@ -1415,7 +1426,9 @@ input[type=checkbox] {
   border: 2px solid inherit;
 }
 .contact .form textarea {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   resize: none;
   outline: none;
   border: none;
@@ -1604,6 +1617,9 @@ html {
   color: #ffca42;
 }
 
+.cartSection .lists {
+  justify-content: flex-start;
+}
 .cartSection .lists::-webkit-scrollbar-track {
   border-radius: 10px;
 }
@@ -1815,7 +1831,8 @@ main .hero .image {
 main .hero .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .hero .info {
   width: 100%;
@@ -1973,7 +1990,8 @@ main .books-container .books .book .image {
 main .books-container .books .book .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .books-container .books .book .info {
   display: flex;
@@ -2063,7 +2081,8 @@ main .about .image .img {
 main .about .image .img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .about .image .decoration {
   position: absolute;
@@ -2137,7 +2156,8 @@ main .about .info .qrCode {
 main .about .info .qrCode img {
   width: 8rem;
   height: 8rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .about .info .qrCode h5 {
   color: #ffca42;
@@ -2169,7 +2189,8 @@ main .stores .storesContainer .store {
 main .stores .storesContainer .store img {
   width: 6rem;
   height: 6rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .stores .storesContainer .store .subtitle {
   color: #1b3764;
@@ -2487,7 +2508,8 @@ main .reviews .cards .card .card-head .image {
 main .reviews .cards .card .card-head .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .reviews .cards .card .card-head .col h4 {
   color: #f6f8fc;
@@ -2558,7 +2580,8 @@ main .blogContainer .cards .card .card-head {
 main .blogContainer .cards .card .card-head img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .blogContainer .cards .card .card-body {
   padding: 0 1rem 1rem;
@@ -2656,6 +2679,10 @@ main .subscription .container .inputBx input {
   line-height: 1.5;
   color: #1b3764;
   transition: 0.6s;
+}
+main .subscription .container .inputBx input::-moz-placeholder {
+  color: #969aa0;
+  font-size: 0.75rem;
 }
 main .subscription .container .inputBx input::placeholder, main .subscription .container .inputBx input::-moz-placeholder {
   color: #969aa0;
@@ -3079,7 +3106,8 @@ footer p {
   main .banner .image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   main .banner .text .bannerTitle {
     text-align: left;
@@ -3321,7 +3349,8 @@ footer p {
     height: 24rem;
   }
   main .banner .image img {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   main .reasons .row {
     display: grid;
@@ -3349,7 +3378,8 @@ footer p {
   main .reasons .row .image img {
     width: 22rem;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     z-index: 2;
     height: 100%;
   }
@@ -3462,7 +3492,8 @@ footer p {
   .reasons .row .image img {
     width: 22rem;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     z-index: 2;
   }
   .reasons .row .image .decoration {
@@ -3511,4 +3542,4 @@ footer p {
   }
 }
 /** 
-*?==============x=================  MEDIA QUERIES ================x===============================================**/
+*?==============x=================  MEDIA QUERIES ================x===============================================**//*# sourceMappingURL=index.css.map */

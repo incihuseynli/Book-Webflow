@@ -1,6 +1,6 @@
 // ======================= Books Section ==================================
 // const BOOKS_URL = "http://localhost:3003/books";
-const BOOKS_URL = "https://my-json-server.typicode.com/incihuseynli/Data1/books";
+const BOOKS_URL = "https://my-json-server.typicode.com/dbStoreForProjects/Data1/books";
 
 const booksContainer = document.querySelector(".books-container .books");
 fetch(BOOKS_URL)

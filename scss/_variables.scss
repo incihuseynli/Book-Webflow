@@ -32,7 +32,7 @@ $fontSize-body7: 0.625rem;
 
 $boxShadow1: 10px 19px 30px 0px rgba(0, 0, 0, 0.1);
 // Mixins
-@mixin displayFlex($alignItems, $justifyContent, $dir) {
+@mixin displayFlex($alignItems:center, $justifyContent, $dir) {
   display: flex;
   align-items: $alignItems;
   justify-content: $justifyContent;

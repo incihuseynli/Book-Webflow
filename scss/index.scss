@@ -43,6 +43,9 @@ html {
 }
 
 .cartSection {
+  .lists{
+    justify-content: flex-start;
+  }
   .lists::-webkit-scrollbar-track {
     border-radius: 10px;
   }
@@ -115,9 +118,9 @@ header {
     position: relative;
     @include displayFlex(center, space-between, row);
     z-index: 10000;
-    .right{
+    .right {
       @include displayFlex(center, unset, row);
-        gap: 2rem;
+      gap: 2rem;
     }
     #openMenu {
       font-size: $fontSize-body2;
@@ -452,7 +455,8 @@ main {
           background: rgba($secondary-gray, 0.1);
           @include displayFlex(flex-start, unset, column);
           gap: 1.5rem;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+            rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           .number {
             width: 3rem;
             height: 3rem;
@@ -491,12 +495,13 @@ main {
         background: $brightWhite;
         @include displayFlex(flex-start, unset, column);
         gap: 1rem;
-        padding: 1rem 1rem .5rem;
-        transition: .6s;
+        padding: 1rem 1rem 0.5rem;
+        transition: 0.6s;
         cursor: pointer;
-        &:hover{
-          box-shadow: rgba(8, 14, 130, 0.1) 0px 20px 25px -5px, rgba(218, 212, 60, 0.04) 0px 10px 10px -5px,
-          rgba($primary-yellow ,.4) 0px 0px 16px;;
+        &:hover {
+          box-shadow: rgba(8, 14, 130, 0.1) 0px 20px 25px -5px,
+            rgba(218, 212, 60, 0.04) 0px 10px 10px -5px,
+            rgba($primary-yellow, 0.4) 0px 0px 16px;
         }
         .subtitle {
           @include textTitle($primary-blue, left);
@@ -794,7 +799,7 @@ footer {
 @media (min-width: 768px) {
   /* ==== Header Section ==== */
   header {
-    padding: $md;
+    padding-inline: $sm;
     .sm-header,
     .socials {
       display: none;
@@ -829,6 +834,7 @@ footer {
         margin-right: 2rem;
       }
       .btn {
+        width: 8rem !important;
         &:hover {
           border: 2px solid $primary-yellow;
         }
@@ -1135,8 +1141,8 @@ footer {
       align-items: flex-start;
       justify-content: space-between;
       .image {
-        width: 30rem;
-        height: 36rem;
+        width: 23rem;
+        height: 29rem;
       }
       .info {
         width: 38rem;

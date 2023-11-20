@@ -1,5 +1,5 @@
 // const BLOG_URL = "http://localhost:3003/news";
-const BLOG_URL = "https://my-json-server.typicode.com/incihuseynli/Data2/news";
+const BLOG_URL = "https://my-json-server.typicode.com/dbStoreForProjects/Data2/news";
 
 const blogContainerSection = document.querySelector(
   ".blogContainer.blogPage .cards"

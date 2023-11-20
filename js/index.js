@@ -2,7 +2,7 @@ const heroDetails = document.querySelector(".hero .info .details");
 const heroImg = document.querySelector(".hero .image");
 // const BOOK_URL = "http://localhost:3003/books?id=1";
 const BOOK_URL =
-  "https://my-json-server.typicode.com/incihuseynli/Data1/books?id=1";
+  "https://my-json-server.typicode.com/dbStoreForProjects/Data1/books?id=1";
 fetch(BOOK_URL)
   .then((response) => {
     return response.json();
@@ -40,7 +40,7 @@ fetch(BOOK_URL)
 // ======================= About Author Section ==================================
 // const ABOUT_AUTHOR = "http://localhost:3003/about";
 const ABOUT_AUTHOR =
-  "https://my-json-server.typicode.com/incihuseynli/Data1/about";
+  "https://my-json-server.typicode.com/dbStoreForProjects/Data1/about";
 
 const aboutSec = document.querySelector(".about");
 
