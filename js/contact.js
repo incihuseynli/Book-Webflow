@@ -2,7 +2,7 @@ const faqContainer = document.querySelector(".faqContainer");
 const questionBx = document.querySelector(".faqContainer .col");
 
 // const CONTACT_URL = "http://localhost:3003/FAQ";
-const FAQ_URL = "https://my-json-server.typicode.com/dbStoreForProjects/Data2/FAQ";
+const FAQ_URL = "https://my-json-server.typicode.com/dbForProjects/Data2/FAQ";
 
 fetch(FAQ_URL)
   .then((response) => {

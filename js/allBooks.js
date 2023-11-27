@@ -1,4 +1,4 @@
-const ALL_BOOKS_URL = "https://my-json-server.typicode.com/dbStoreForProjects/Data1/allBooks";
+const ALL_BOOKS_URL = "https://my-json-server.typicode.com/dbForProjects/Data1/allBooks";
 // const ALL_BOOKS_URL = "http://localhost:3003/allBooks";
 
 const booksListContainer = document.querySelector(".booksList .lists");

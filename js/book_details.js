@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const ALL_BOOKS_URL = new URLSearchParams(document.location.search);
     let id = ALL_BOOKS_URL.get("id");
     let res = await fetch(
-      `https://my-json-server.typicode.com/dbStoreForProjects/Data1/allBooks/${id}`
+      `https://my-json-server.typicode.com/dbForProjects/Data1/allBooks/${id}`
     );
     let bookDetail = await res.json();
     const smIMG = bookDetail.smallImg

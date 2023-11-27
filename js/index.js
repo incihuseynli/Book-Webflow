@@ -2,7 +2,7 @@ const heroDetails = document.querySelector(".hero .info .details");
 const heroImg = document.querySelector(".hero .image");
 // const BOOK_URL = "http://localhost:3003/books?id=1";
 const BOOK_URL =
-  "https://my-json-server.typicode.com/dbStoreForProjects/Data1/books?id=1";
+  "https://my-json-server.typicode.com/dbForProjects/Data1/books?id=1";
 fetch(BOOK_URL)
   .then((response) => {
     return response.json();
@@ -40,7 +40,7 @@ fetch(BOOK_URL)
 // ======================= About Author Section ==================================
 // const ABOUT_AUTHOR = "http://localhost:3003/about";
 const ABOUT_AUTHOR =
-  "https://my-json-server.typicode.com/dbStoreForProjects/Data1/about";
+  "https://my-json-server.typicode.com/dbForProjects/Data1/about";
 
 const aboutSec = document.querySelector(".about");
 
@@ -107,7 +107,7 @@ fetch(ABOUT_AUTHOR)
 //   ====================== Reasons Section ====================================
 
 // const REASONS_URL = "http://localhost:3003/reasons";
-const REASONS_URL = "https://my-json-server.typicode.com/incihuseynli/Data3/reasons";
+const REASONS_URL = "https://my-json-server.typicode.com/dbForProjects/Data3/reasons";
 
 const reasonsContainer = document.querySelector(".reasons .cards");
 
@@ -130,7 +130,7 @@ fetch(REASONS_URL)
 
 // const CHAPTERS_URL = "http://localhost:3003/chapters";
 const CHAPTERS_URL =
-  "https://my-json-server.typicode.com/incihuseynli/Data3/chapters";
+  "https://my-json-server.typicode.com/dbForProjects/Data3/chapters";
 
 const chaptersContainer = document.querySelector(".chapters .cards");
 
@@ -169,7 +169,7 @@ fetch(CHAPTERS_URL)
 
 // const REVIEWS_URL = "http://localhost:3003/reviews";
 const REVIEWS_URL =
-  "https://my-json-server.typicode.com/incihuseynli/Data3/reviews";
+  "https://my-json-server.typicode.com/dbForProjects/Data3/reviews";
 
 const reviewsCardContainer = document.querySelector(".reviews .cards");
 const reviewsInfo = document.querySelector(".reviews .info");
@@ -231,7 +231,7 @@ fetch(REVIEWS_URL)
 
 // const BLOG_URL = "http://localhost:3003/news?_limit=4";
 const BLOG_URL =
-  "https://my-json-server.typicode.com/incihuseynli/Data2/news?_limit=4";
+  "https://my-json-server.typicode.com/dbForProjects/Data2/news?_limit=4";
 
 const blogContainerCards = document.querySelector(".blogContainer .cards");
 
